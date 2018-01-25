@@ -30,43 +30,49 @@
     </header>
 
     <main class="page-main">
+<!-- Блок программы питания -->
       <section class="nutrition-program">
         <header class="nutrition-program__header">
           <h1 class="nutrition-program__title">Подбор программы</h1>
           <small class="nutrition-program__desc">Заполните анкету и мы подберем программу питания для вашего кота</small>
         </header>
-        <form action="https://echo.htmlacademy.ru" method="post" class="nutrition-program__form  form">
+<!-- Форма по подбору программы питания -->
+        <form class="nutrition-program__form  form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__cat-data">
             <div class="half-width">
-              <label>
-                Имя:<sup>*</sup> <input class="form__input" type="text" name="cat-name" value="Барсик" required>
+              <label class="form__label  label">
+                Имя:<sup>*</sup>
               </label>
+              <input class="form__input input" type="text" name="cat-name" value="Барсик" required>
             </div>
             <div class="half-width">
-              <label>
-                Вес(кг):<sup>*</sup> <input class="form__input" type="text" name="cat-weight" value="7" required>
+              <label class="form__label  label">
+                Вес(кг):<sup>*</sup>
               </label>
+              <input class="form__input input" type="text" name="cat-weight" value="7" required>
             </div>
             <div class="half-width">
-              <label>
-                Возраст(лет):<sup>*</sup> <input class="form__input" type="text" name="cat-age" value="7">
+              <label class="form__label  label">
+                Возраст(лет):<sup>*</sup>
               </label>
+              <input class="form__input input" type="text" name="cat-age" value="7">
             </div>
           </div>
+<!-- Блок с радиокнопками -->
           <div class="form__cat-problem">
             <div class="half-width">
               <label>
-                <input type="radio" class="form__radio" name="cat-problem" value="Похудение" checked> Похудение
+                <input class="form__radio" type="radio" name="cat-problem" value="Losing weight" checked> Похудение
               </label>
             </div>
             <div class="half-width">
               <label>
-                <input type="radio" class="form__radio" name="cat-problem" value="Набор массы"> Набор массы
+                <input class="form__radio" type="radio" name="cat-problem" value="Weight"> Набор массы
               </label>
             </div>
             <div class="half-width">
               <label>
-                <input type="radio" class="form__radio" name="cat-problem" value="Не знаю (нужен ваш совет)"> Не знаю (нужен ваш совет)
+                <input class="form__radio" type="radio" name="cat-problem" value="recommendation"> Не знаю (нужен ваш совет)
               </label>
             </div>
           </div>
