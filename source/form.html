@@ -39,19 +39,19 @@
 <!-- Форма по подбору программы питания -->
         <form class="nutrition-program__form  form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__cat-data">
-            <div class="form__row">
+            <div class="form__row  row">
               <label class="form__label  label">
                 Имя:<sup>*</sup>
               </label>
               <input class="form__input input" type="text" name="cat-name" value="Барсик" required>
             </div>
-            <div class="form__row">
+            <div class="form__row  row">
               <label class="form__label  label">
                 Вес(кг):<sup>*</sup>
               </label>
               <input class="form__input input" type="text" name="cat-weight" value="7" required>
             </div>
-            <div class="form__row">
+            <div class="form__row  row">
               <label class="form__label  label">
                 Возраст(лет):<sup>*</sup>
               </label>
@@ -60,17 +60,17 @@
           </div>
 <!-- элемент с радиокнопками -->
           <div class="form__cat-problem">
-            <div class="half-width">
+            <div class="form__row  row">
               <label>
                 <input class="form__radio" type="radio" name="cat-problem" value="Losing weight" checked> Похудение
               </label>
             </div>
-            <div class="half-width">
+            <div class="form__row  row">
               <label>
                 <input class="form__radio" type="radio" name="cat-problem" value="Weight"> Набор массы
               </label>
             </div>
-            <div class="half-width">
+            <div class="form__row  row">
               <label>
                 <input class="form__radio" type="radio" name="cat-problem" value="recommendation"> Не знаю (нужен ваш совет)
               </label>
@@ -81,12 +81,12 @@
               <legend class="form__legend">
                 Контактные данные (владельца кота)
               </legend>
-              <div class="half-width">
+              <div class="form__row  row">
                 <label>
                   E-mail:<sup>*</sup> <input class="form__input  form__input--email" type="email" name="user-email" value="email@email.ru" required>
                 </label>
               </div>
-              <div class="half-width">
+              <div class="form__row  row">
                 <label>
                   Телефон:<sup>*</sup> <input class="form__input  form__input--tel" type="tel" name="tel" value="8(959)900-60-90" required>
                 </label>
@@ -98,12 +98,10 @@
               <legend class="form__legend">
                 Комментарий
               </legend>
-              <div class="half-width">
-                <label>
-                  <textarea class="form__textarea" name="comment">
-                    Раскажите обо всех повадках кота
-                  </textarea>
-                </label>
+              <div class="form__row  row">
+                <textarea class="form__textarea" name="comment">
+                  Раскажите обо всех повадках кота
+                </textarea>
               </div>
             </fieldset>
           </div>
@@ -112,23 +110,23 @@
               <legend class="form__legend">
                 Дополнительно
               </legend>
-              <div class="half-width">
-                <div class="half-width">
+              <div class="form__row  row">
+                <div class="form__row  row">
                   <label>
                     <input class="form__cheсkbox" type="checkbox" name="extra-sugar" value="Сахарозаменитель" checked > Сахарозаменитель
                   </label>
                 </div>
-                <div class="half-width">
+                <div class="form__row  row">
                   <label>
                     <input class="form__cheсkbox" type="checkbox" name="extra-water" value="Питьевая вода"> Питьевая вода
                   </label>
                 </div>
-                <div class="half-width">
+                <div class="form__row  row">
                   <label>
                     <input class="form__cheсkbox" type="checkbox" name="extra-milk" value="Молоко"> Молоко
                   </label>
                 </div>
-                <div class="half-width">
+                <div class="form__row  row">
                   <label>
                     <input class="form__cheсkbox" type="checkbox" name="extra-vitamins" value="Витамины"> Витамины
                   </label>
