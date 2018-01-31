@@ -1,32 +1,46 @@
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "site-list.scss";
-@import "page-main.scss";
-@import "page-header.scss";
-@import "first-screen.scss";
-@import "program.scss";
-@import "link.scss";
-@import "advantages.scss";
-@import "example.scss";
-@import "stats.scss";
-@import "slider.scss";
-@import "page-footer.scss";
-@import "contacts.scss";
-@import "social.scss";
-@import "copyright.scss";
-@import "nutrition-program.scss";
-@import "form.scss";
-@import "row.scss";
-@import "label.scss";
-@import "input.scss";
-@import "button.scss";
-@import "catalog.scss";
-@import "product-card.scss";
-@import "features.scss";
-@import "product-card-all.scss";
-@import "extra.scss";
-@import "product-card-small.scss";
-@import "gift.scss";
-@import "extra.scss";
 
-body { background: red; }
+@import "page-header/page-header.scss";
+@import "main-nav/main-nav.scss";
+@import "site-list/site-list.scss";
+@import "page-main/page-main.scss";
+@import "page-header/page-header.scss";
+@import "first-screen/first-screen.scss";
+@import "program/program.scss";
+@import "link/link.scss";
+@import "advantages/advantages.scss";
+@import "example/example.scss";
+@import "stats/stats.scss";
+@import "slider/slider.scss";
+@import "page-footer/page-footer.scss";
+@import "contacts/contacts.scss";
+@import "social/social.scss";
+@import "copyright/copyright.scss";
+@import "nutrition-program/nutrition-program.scss";
+@import "form/form.scss";
+@import "row/row.scss";
+@import "label/label.scss";
+@import "input/input.scss";
+@import "button/button.scss";
+@import "catalog/catalog.scss";
+@import "product-card/product-card.scss";
+@import "features/features.scss";
+@import "product-card-all/product-card-all.scss";
+@import "extra/extra.scss";
+@import "product-card-small/product-card-small.scss";
+@import "gift/gift.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-family: Oswaldregular, Arial, sans-serif;
+}
+h1{
+  font-size: 36px;
+}
+
+
+@font-face {
+  font-family: Oswaldregular;
+  src: url(fonts/oswaldregular.woff);
+}
