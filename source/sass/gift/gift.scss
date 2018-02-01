@@ -1,0 +1,13 @@
+.gift{
+  &--case{
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+  }
+  .gift__text{
+    color: #ffffff;
+  }
+  .gift__icon{
+    display: block;
+    width: 100px;
+  }
+
+}

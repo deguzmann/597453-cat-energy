@@ -1,5 +1,14 @@
 .main-nav{
+  margin: 20px;
   .main-nav__toggle{
 
+  }
+  .main-nav__logo-images{
+    display: block;
+    width: 100px;
+  }
+  .main-nav__logo-desc{
+    display: block;
+    width: 200px;
   }
 }
