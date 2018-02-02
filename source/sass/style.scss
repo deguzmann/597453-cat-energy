@@ -19,41 +19,39 @@ h2 {
 
 @font-face {
   font-family: "Oswaldregular";
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Oswaldmedium";
-  src: url("../fonts/oswaldmeduim.woff") format("woff");
-  src: url("../fonts/oswaldmeduim.woff2") format("woff2");
+  src: url("../fonts/oswaldmeduim.woff") format("woff"), url("../fonts/oswaldmeduim.woff2") format("woff2");
 }
 
-@import "page-header/page-header.scss";
-@import "main-nav/main-nav.scss";
-@import "site-list/site-list.scss";
-@import "page-main/page-main.scss";
-@import "first-screen/first-screen.scss";
-@import "program/program.scss";
-@import "link/link.scss";
-@import "advantages/advantages.scss";
-@import "example/example.scss";
-@import "stats/stats.scss";
-@import "slider/slider.scss";
-@import "page-footer/page-footer.scss";
-@import "contacts/contacts.scss";
-@import "social/social.scss";
-@import "copyright/copyright.scss";
-@import "nutrition-program/nutrition-program.scss";
-@import "form/form.scss";
-@import "row/row.scss";
-@import "label/label.scss";
-@import "input/input.scss";
-@import "button/button.scss";
-@import "catalog/catalog.scss";
-@import "product-card/product-card.scss";
-@import "features/features.scss";
-@import "product-card-all/product-card-all.scss";
-@import "extra/extra.scss";
-@import "product-card-small/product-card-small.scss";
-@import "gift/gift.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/first-screen.scss";
+@import "blocks/program.scss";
+@import "blocks/link.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/stats.scss";
+@import "blocks/slider.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/nutrition-program.scss";
+@import "blocks/form.scss";
+@import "blocks/row.scss";
+@import "blocks/label.scss";
+@import "blocks/input.scss";
+@import "blocks/button.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/features.scss";
+@import "blocks/product-card-all.scss";
+@import "blocks/extra.scss";
+@import "blocks/product-card-small.scss";
+@import "blocks/gift.scss";
