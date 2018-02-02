@@ -1,32 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: #444444;
-  font-family: "Arial", "Oswaldregular", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-h1 {
-  font-size: 36px;
-  font-family: "Oswaldregular", "Arial", sans-serif;
-}
-
-h2 {
-  font-size: 24px;
-  font-family: "Oswaldregular", "Arial", sans-serif;
-}
-
-@font-face {
-  font-family: "Oswaldregular";
-  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Oswaldmedium";
-  src: url("../fonts/oswaldmeduim.woff") format("woff"), url("../fonts/oswaldmeduim.woff2") format("woff2");
-}
-
+@import "general.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -55,3 +27,4 @@ h2 {
 @import "blocks/extra.scss";
 @import "blocks/product-card-small.scss";
 @import "blocks/gift.scss";
+@import "fonts.scss";
