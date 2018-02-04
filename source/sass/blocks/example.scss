@@ -5,3 +5,13 @@
 .example__wrapper {
   margin: 20px;
 }
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .example__info {
+    width: 570px;
+  }
+}
