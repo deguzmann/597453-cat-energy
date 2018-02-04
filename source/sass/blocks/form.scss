@@ -2,7 +2,7 @@
   padding: 0;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .form__extra-fields {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +12,7 @@
       width: 325px;
     }
   }
+
   .form__footer {
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +20,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .form__header {
     display: flex;
     justify-content: flex-start;

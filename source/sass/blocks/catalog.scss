@@ -2,7 +2,7 @@
   margin: 20px;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .catalog__list {
     display: flex;
     justify-content: space-between;
