@@ -3,6 +3,18 @@
 }
 
 .program__item {
-  background-color: #f2f2f2;
   padding: 20px;
+  margin: 20px 0;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $desktop-width) {
+  .program__wrapper {
+    display: flex;
+  }
+
+  .program__item {
+    margin: 20px;
+  }
+
 }
