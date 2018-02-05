@@ -9,18 +9,23 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__logo">
+    <header class="page-header  page-header--nojs">
+      <div class="page-header__logo  page-header__logo--only-mobile">
         <a class="page-header__logo-images">
           <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
         </a>
         <a class="page-header__logo-desc" href="#">
           <img class="" width="100" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
         </a>
-        <button class="page-header__toggle"></button>
+        <button class="page-header__toggle  page-header__toggle--closed"><span class="visually-hidden">Меню</span></button>
+      </div>
+      <div class="page-header__logo  page-header__logo--not-mobile">
+        <a class="page-header__logo-images">
+          <img class="" width="35" src="img/logo-tablet.png" alt="Кэт энерджи">
+        </a>
       </div>
 <!-- Блок меню -->
-      <nav class="page-header__nav  main-nav">
+      <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list  site-list">
             <li class="site-list__item  site-list__item--active">
@@ -191,5 +196,6 @@
       </div>
     </footer>
 
+  <script src="js/app.js"></script>
   </body>
 </html>

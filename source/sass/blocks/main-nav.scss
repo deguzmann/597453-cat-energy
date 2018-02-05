@@ -3,7 +3,6 @@
 }
 
 .main-nav__wrapper {
-  margin: 0 20px;
   text-align: center;
 }
 
@@ -15,7 +14,14 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
     margin: 0;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    &--closed {
+      display: none;
+    }
   }
 }
