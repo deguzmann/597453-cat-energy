@@ -1,3 +1,17 @@
 .button {
-  margin: 0 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  border: none;
+  cursor: pointer;
+
+  &--green {
+    background-color: #68b738;
+    color: #ffffff;
+    &:hover {
+      background-color: #5eaa2f;
+    }
+  }
 }
