@@ -1,3 +1,47 @@
 .form {
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .form__extra-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .form__row {
+      width: 325px;
+    }
+  }
+
+  .form__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__header {
+    display: flex;
+    justify-content: flex-start;
+
+    .form-group-fields {
+      width: 570px;
+    }
+  }
+
+  .form__contact-fields {
+    display: flex;
+    justify-content: flex-start;
+
+    .form__row {
+      width: 570px;
+    }
+  }
+
+  .form__extra-fields {
+    .form__row {
+      width: 245px;
+    }
+  }
+}

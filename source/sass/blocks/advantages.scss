@@ -1,3 +1,26 @@
 .advantages__wrapper {
   margin: 20px;
 }
+
+.advantages__list {
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 250px;
+  }
+}

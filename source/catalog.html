@@ -12,19 +12,24 @@
 >>>>>>> 7aa7c224f238346e4cdc15368d24b9a624053fee
     <header class="page-header">
 <!-- Блок меню -->
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-images" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
-          <img class="main-nav__logo-desc" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
+      <div class="page-header__logo">
+        <a class="page-header__logo-images">
+          <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
         </a>
-        <button class="main-nav__toggle"></button>
+        <a class="page-header__logo-desc" href="#">
+          <img class="" width="100" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
+        </a>
+        <button class="page-header__toggle"></button>
+      </div>
+<!-- Блок меню -->
+      <nav class="page-header__nav  main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list  site-list">
             <li class="site-list__item  site-list__item--active">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Подбор программы</a>
@@ -444,7 +449,7 @@
               <div class="product-card-all__wrapper">
                 <header class="product-card-all__header">
                   <div class="product-card-all__icon">
-                    <img class="roduct-card-all__img" src="img/icon-plus-mobile.svg" alt="Иконка">
+                    <img class="product-card-all__img" src="img/icon-plus-mobile.svg" alt="Иконка">
                   </div>
                 </header>
                 <h2 class="product-card-all__title">Показать еще 100500 товаров</h2>
@@ -456,74 +461,76 @@
           </section>
   <!-- Блок с дополнительными товарами -->
           <section class="extra">
+            <header class="extra__header">
+              <h3 class="extra__title">Дополнительные товары</h3>
+            </header>
             <div class="extra__wrapper">
-              <header class="extra__header">
-                <h3 class="extra__title">Дополнительные товары</h3>
-              </header>
-              <article class="extra__item  product-card-small">
-                <div class="product-card-small__wrapper">
-                  <header class="product-card-small__header">
-                    <a href="#">
-                      <h3 class="product-card-small__title">Сахарозаменитель</h3>
-                    </a>
-                  </header>
-                  <table class="product-card-small__features  features">
-                    <tr class="features__item">
-                      <td class="features__field">1 Упаковка</td>
-                      <td class="features__value">100 Р.</td>
-                    </tr>
-                  </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
-                </div>
-              </article>
-              <article class="extra__item  product-card-small">
-                <div class="product-card-small__wrapper">
-                  <header class="product-card-small__header">
-                    <a href="#">
-                      <h3 class="product-card-small__title">Питьевая вода</h3>
-                    </a>
-                  </header>
-                  <table class="product-card-small__features  features">
-                    <tr class="features__item">
-                      <td class="features__field">5 литров</td>
-                      <td class="features__value">50 Р.</td>
-                    </tr>
-                  </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
-                </div>
-              </article>
-              <article class="extra__item  product-card-small">
-                <div class="product-card-small__wrapper">
-                  <header class="product-card-small__header">
-                    <a href="#">
-                      <h3 class="product-card-small__title">Молоко</h3>
-                    </a>
-                  </header>
-                  <table class="product-card-small__features  features">
-                    <tr class="features__item">
-                      <td class="features__field">1 литр</td>
-                      <td class="features__value">100 Р.</td>
-                    </tr>
-                  </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
-                </div>
-              </article>
-              <article class="extra__item  product-card-small">
-                <div class="product-card-small__wrapper">
-                  <header class="product-card-small__header">
-                    <a href="#">
-                      <h3 class="product-card-small__title">Витамины</h3>
-                    </a>
-                  </header>
-                  <table class="product-card-small__features  features">
-                    <tr class="features__item">
-                      <td class="features__field">1 упаковка (30 г)</td>
-                      <td class="features__value">300 Р.</td>
-                    </tr>
-                  </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
-                </div>
-              </article>
+              <div class="extra__list">
+                <article class="extra__item  product-card-small">
+                  <div class="product-card-small__wrapper">
+                    <header class="product-card-small__header">
+                      <a href="#">
+                        <h3 class="product-card-small__title">Сахарозаменитель</h3>
+                      </a>
+                    </header>
+                    <table class="product-card-small__features  features">
+                      <tr class="features__item">
+                        <td class="features__field">1 Упаковка</td>
+                        <td class="features__value">100 Р.</td>
+                      </tr>
+                    </table>
+                    <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  </div>
+                </article>
+                <article class="extra__item  product-card-small">
+                  <div class="product-card-small__wrapper">
+                    <header class="product-card-small__header">
+                      <a href="#">
+                        <h3 class="product-card-small__title">Питьевая вода</h3>
+                      </a>
+                    </header>
+                    <table class="product-card-small__features  features">
+                      <tr class="features__item">
+                        <td class="features__field">5 литров</td>
+                        <td class="features__value">50 Р.</td>
+                      </tr>
+                    </table>
+                    <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  </div>
+                </article>
+                <article class="extra__item  product-card-small">
+                  <div class="product-card-small__wrapper">
+                    <header class="product-card-small__header">
+                      <a href="#">
+                        <h3 class="product-card-small__title">Молоко</h3>
+                      </a>
+                    </header>
+                    <table class="product-card-small__features  features">
+                      <tr class="features__item">
+                        <td class="features__field">1 литр</td>
+                        <td class="features__value">100 Р.</td>
+                      </tr>
+                    </table>
+                    <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  </div>
+                </article>
+                <article class="extra__item  product-card-small">
+                  <div class="product-card-small__wrapper">
+                    <header class="product-card-small__header">
+                      <a href="#">
+                        <h3 class="product-card-small__title">Витамины</h3>
+                      </a>
+                    </header>
+                    <table class="product-card-small__features  features">
+                      <tr class="features__item">
+                        <td class="features__field">1 упаковка (30 г)</td>
+                        <td class="features__value">300 Р.</td>
+                      </tr>
+                    </table>
+                    <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  </div>
+                </article>
+              </div>
   <!-- Блок с подарком -->
               <article class="extra__gift  gift  gift--case">
                 <div class="gift__wrapper">

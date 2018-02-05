@@ -1,13 +1,21 @@
 .main-nav {
-  margin: 20px;
+  width: auto;
 }
 
-.main-nav__logo-images {
-  display: block;
-  width: 100px;
+.main-nav__wrapper {
+  margin: 0 20px;
+  text-align: center;
 }
 
-.main-nav__logo-desc {
-  display: block;
-  width: 200px;
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
 }
