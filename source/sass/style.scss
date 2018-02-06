@@ -1,6 +1,8 @@
+@import "normalize.scss";
 @import "variables.scss";
-@import "general.scss";
 @import "fonts.scss";
+@import "general.scss";
+@import "mixins.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
