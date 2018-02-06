@@ -1,3 +1,27 @@
 .catalog__wrapper {
   margin: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 325px;
+    margin: 30px 0;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include width-wrapper(1300px, 40px);
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
+}

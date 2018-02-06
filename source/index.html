@@ -3,25 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Функциональное питание для котов «Кэт энерджи»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-<!-- Блок меню -->
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-images" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
-          <img class="main-nav__logo-desc" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
+      <div class="page-header__logo">
+        <a class="page-header__logo-images">
+          <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
         </a>
-        <button class="main-nav__toggle"></button>
+        <a class="page-header__logo-desc" href="#">
+          <img class="" width="100" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
+        </a>
+        <button class="page-header__toggle"></button>
+      </div>
+<!-- Блок меню -->
+      <nav class="page-header__nav  main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list  site-list">
             <li class="site-list__item  site-list__item--active">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Подбор программы</a>
@@ -41,7 +46,10 @@
               Занялся собой? Займись котом!
             </small>
           </header>
-          <img src="img/index-can-mobile@1x.png" alt="Кэт энерджи курица" class="first-screen__img">
+          <div class="first-screen__img">
+
+          </div>
+
           <button class="first-screen__btn  button  button--green">Подобрать программу</button>
         </div>
       </section>
@@ -105,21 +113,24 @@
 <!-- Блок с примером -->
       <section class="example">
         <div class="example__wrapper">
-          <header class="example__header">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          </header>
-          <div class="example__stats  stats">
-            <div class="stats__value">
-              <span class="stats__title">5 кг</span>
-              <span class="stats__text">снижение веса</span>
+          <div class="example__info">
+            <header class="example__header">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            </header>
+            <div class="example__stats  stats">
+              <div class="stats__value">
+                <span class="stats__title">5 кг</span>
+                <span class="stats__text">снижение веса</span>
+              </div>
+              <div class="stats__value">
+                <span class="stats__title">60 дней</span>
+                <span class="stats__text">затрачено времени</span>
+              </div>
+              <span class="stats__legend  stats__legend--bottom">Затраты на питание: 15 000 руб.</span>
             </div>
-            <div class="stats__value">
-              <span class="stats__title">60 дней</span>
-              <span class="stats__text">затрачено времени</span>
-            </div>
-            <span class="stats__legend  stats__legend--bottom">Затраты на питание: 15 000 руб.</span>
           </div>
+
           <div class="example__photo  slider">
             <ul class="slider__list">
               <li  class="slider__item">

@@ -1,3 +1,11 @@
 .extra {
   padding: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .extra__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
