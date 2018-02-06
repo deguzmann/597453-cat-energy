@@ -1,42 +1,13 @@
 .first-screen__wrapper {
-  min-width: 320px;
+  min-width: 280px;
   margin: 0 auto;
-  padding: 6px 30px;
+  padding: 6px 20px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-}
 
-.first-screen__header {
-  height: 310px;
-  z-index: 2;
-}
-
-.first-screen__title,
-.first-screen__slogan {
-  color: #ffffff;
-}
-
-.first-screen__slogan {
-  text-transform: uppercase;
-}
-
-.first-screen__img {
-  margin-top: -135px;
-  height: 271px;
-  background-image: url("../img/index-can-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.first-screen__btn {
-  width: 100%;
-  z-index: 2;
-}
-
-@media (min-width: $tablet-width) {
-  .first-screen__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -44,45 +15,7 @@
     text-align: left;
   }
 
-  .first-screen__header {
-    height: auto;
-    width: 430px;
-    margin-left: 90px;
-  }
-
-  .first-screen__title,
-  .first-screen__slogan {
-    color: #111111;
-  }
-
-  .first-screen__title {
-    font-size: 60px;
-  }
-
-  .first-screen__slogan {
-    font-size: 20px;
-  }
-
-  .first-screen__img {
-    order: 2;
-    margin-top: -75px;
-    height: 610px;
-    background-image: url("../img/index-can-tablet.png");
-  }
-
-  .first-screen__btn {
-    width: 250px;
-    margin-top: 25px;
-    margin-left: 90px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .first-screen {
-    margin-top: -163px;
-  }
-
-  .first-screen__wrapper {
+  @media (min-width: $desktop-width) {
     background-image: url("../img/index-background-desktop.jpg");
     background-position: 100% 0;
     padding-top: 163px;
@@ -91,13 +24,78 @@
     min-height: 550px;
     background-size: auto;
   }
+}
 
-  .first-screen__header,
-  .first-screen__btn {
-    margin-left: 80px;
+.first-screen__header {
+  height: 310px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    width: 430px;
+    margin-left: 90px;
+  }
+}
+
+.first-screen__title,
+.first-screen__slogan {
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #111111;
+  }
+}
+
+.first-screen__slogan {
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.first-screen__img {
+  margin-top: -135px;
+  height: 271px;
+  background-image: url("../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-top: -75px;
+    height: 610px;
+    background-image: url("../img/index-can-tablet.png");
   }
 
-  .first-screen__img {
+  @media (min-width: $desktop-width) {
     margin-top: -330px;
+  }
+}
+
+.first-screen__btn {
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .first-screen__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .first-screen {
+    margin-top: -163px;
   }
 }

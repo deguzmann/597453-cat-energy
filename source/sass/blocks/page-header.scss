@@ -1,7 +1,4 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-
   img {
     &:hover{
       opacity: 0.5;
@@ -21,9 +18,18 @@
   }
 }
 
-.page-header__logo {
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 10px 20px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header__logo {
   &--only-mobile {
     width: auto;
     display: flex;
@@ -73,11 +79,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .page-header__logo,
   .page-header__nav {
     padding: 25px 30px;
