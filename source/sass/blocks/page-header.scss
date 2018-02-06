@@ -3,7 +3,7 @@
   flex-direction: column;
 
   img {
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
   }
@@ -47,8 +47,10 @@
     width: 35px;
     height: 35px;
   }
+
   @media (min-width: $tablet-width) {
     display: block;
+
     img {
       width: 190px;
       height: 60px;
@@ -69,6 +71,7 @@
   &:active {
     opacity: 0.5;
   }
+
   &:focus {
     outline: none;
   }
