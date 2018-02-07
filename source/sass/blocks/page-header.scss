@@ -23,6 +23,12 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 25px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px)
+    padding: 55px 40px;
   }
 }
 
@@ -39,6 +45,10 @@
 
   &--not-mobile {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
@@ -90,8 +100,6 @@
 @media (min-width: $tablet-width) {
   .page-header__logo,
   .page-header__nav {
-    padding: 25px 30px;
-
     &--only-mobile {
       display: none;
     }
@@ -104,12 +112,5 @@
   .page-header__logo-desc,
   .page-header__toggle {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo,
-  .page-header__nav {
-    padding: 50px 110px;
   }
 }
