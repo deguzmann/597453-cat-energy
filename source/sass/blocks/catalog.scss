@@ -17,6 +17,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include width-wrapper(1300px, 40px);
+  }
+
   .catalog__item {
     width: 245px;
   }
