@@ -1,19 +1,107 @@
 .program__wrapper {
-  margin: 20px;
+  padding: 10px 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .program__item {
-  padding: 20px;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    margin: 20px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .program__wrapper {
-    display: flex;
+.program__title {
+  padding-top: 20px;
+  text-align: center;
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    color: #000000
+  }
+}
+
+.program__title-icon {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 0;
+  top: -10px;
+  border-radius: 50%;
+  background: #68b738;
+
+  &--slim {
+    svg {
+      position: relative;
+      top: -5px;
+      left: 0;
+      width: auto;
+      height: 55px;
+
+      polygon {
+        fill: #000000;
+      }
+    }
   }
 
-  .program__item {
-    margin: 20px;
+  &--pro {
+    svg {
+      position: relative;
+      top: 10px;
+      left: -10px;
+      width: 70px;
+      height: auto;
+
+      polygon {
+        fill: #000000;
+      }
+    }
+  }
+}
+
+.program__desc {
+  margin: 0;
+  padding: 20px 0;
+  position: relative;
+  line-height: 18px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 1px;
+
+    background: #d9d9d9;
+  }
+}
+
+.program__footer {
+  padding: 5px 0;
+}
+
+.program__btn {
+  position: relative;
+  display: block;
+  padding-bottom: 0;
+}
+
+.program__btn-icon {
+  position: absolute;
+  top: 17px;
+  padding-left: 10px;
+  width: 24px;
+  height: 16px;
+  opacity: 0.8;
+  polygon {
+    fill: #000000;
   }
 }
