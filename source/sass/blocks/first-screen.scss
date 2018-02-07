@@ -43,6 +43,10 @@
     width: 430px;
     margin-left: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .first-screen__title,
