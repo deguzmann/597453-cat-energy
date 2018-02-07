@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include width-wrapper(1300px)
+    @include width-wrapper(1300px);
     padding: 55px 40px;
   }
 }

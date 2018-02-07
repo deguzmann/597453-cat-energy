@@ -19,10 +19,11 @@
 .program__title {
   padding-top: 20px;
   text-align: center;
+
   h2 {
     position: relative;
     text-transform: uppercase;
-    color: #000000
+    color: #000000;
   }
 }
 
@@ -101,6 +102,7 @@
   width: 24px;
   height: 16px;
   opacity: 0.8;
+
   polygon {
     fill: #000000;
   }
