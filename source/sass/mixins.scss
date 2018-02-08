@@ -1,6 +1,5 @@
-@mixin width-wrapper($width, $padding) {
+@mixin width-wrapper($width) {
   width: $width;
   margin: 0 auto;
-  padding: 0 $padding;
   box-sizing: border-box;
 }
