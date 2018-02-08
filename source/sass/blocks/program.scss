@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 80px 40px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
   }
@@ -104,6 +104,10 @@
       height: 0;
     }
   }
+
+   @media (min-width: $tablet-width) {
+    line-height: 24px;
+   }
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
