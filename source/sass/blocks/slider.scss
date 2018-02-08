@@ -1,22 +1,79 @@
 .slider {
-  padding: 0;
+  margin-top: 40px;
 }
 
 .slider__list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .slider__item {
-  img {
-    width: 100%;
-  }
-}
+  text-align: center;
 
-@media (min-width: $tablet-width) {
-  .slider__item {
-    img {
+  img {
+    width: 300px;
+
+    @media (min-width: $tablet-width) {
       width: 50%;
     }
   }
+
+  &--after {
+    display: none;
+  }
+}
+
+.slider__control {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__switch {
+  width: 85px;
+  padding: 2px 15px;
+}
+
+.slider__switch > input[type="checkbox"] {
+  display: none;
+}
+
+.slider__switch > label {
+  cursor: pointer;
+  height: 0;
+  position: relative;
+  width: 40px;
+}
+
+.slider__switch > label::before {
+  content: "";
+  margin-top: 0;
+  width: 86px;
+  height: 14px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.slider__switch > label::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  left: 5px;
+  top: 4px;
+  background: #68b738;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__switch input:checked ~ label::after {
+  left: 45px;
+}
+
+.slider__text {
+  text-transform: uppercase;
 }

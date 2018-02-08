@@ -13,10 +13,10 @@
 
 .advantages__title {
   font-size: 36px;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    color: #000000;
   }
 }
 
@@ -94,10 +94,8 @@
   margin-left: 20px;
   width: 100%;
   flex-shrink: 1;
-  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    line-height: 24px;
   }
 }

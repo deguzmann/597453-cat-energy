@@ -56,6 +56,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    line-height: 37px;
 
     @media (min-width: $desktop-width) {
       padding: 20px 0;
@@ -86,7 +87,6 @@
   margin: 0;
   padding: 20px 0;
   position: relative;
-  line-height: 18px;
 
   &::after {
     content: "";
@@ -103,10 +103,6 @@
     @media (min-width: $tablet-width) {
       height: 0;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

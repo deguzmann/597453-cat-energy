@@ -1,9 +1,27 @@
-.example {
+.example__wrapper {
+  padding: 5px 20px;
   background-color: #f2f2f2;
 }
 
-.example__wrapper {
-  margin: 20px;
+.example__info {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.example__title {
+  font-size: 36px;
+  color: #000000;
+}
+
+.example__stats {
+  padding: 15px 0;
+}
+
+.example__photo {
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $desktop-width) {
