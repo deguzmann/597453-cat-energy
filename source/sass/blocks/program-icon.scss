@@ -1,9 +1,7 @@
 .program-icon {
-  position: absolute;
+  position: relative;
   width: 52px;
   height: 52px;
-  left: 0;
-  top: -10px;
   border-radius: 50%;
   background: #68b738;
 
@@ -70,11 +68,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     width: 110px;
     height: 110px;
-    left: 0;
-    top: -15px;
 
     &--slim {
       svg {

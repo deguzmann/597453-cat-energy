@@ -47,10 +47,13 @@
 
 .program__title {
   padding-top: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 
   h2 {
     position: relative;
+    flex-grow: 1;
+    text-align: center;
     text-transform: uppercase;
     color: #000000;
 
