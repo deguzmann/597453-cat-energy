@@ -46,7 +46,21 @@
   text-transform: uppercase;
 }
 
+.contacts__footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contacts__logo {
   display: block;
-  width: 200px;
+  width: 130px;
+  padding: 20px 0 30px;
 }
+
+.contacts__social {
+  width: 100%;
+}
+

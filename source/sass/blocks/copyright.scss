@@ -1,3 +1,12 @@
 .copyright__wrapper {
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+
+  a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 16px;
+  }
 }
