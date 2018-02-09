@@ -10,6 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 470px;
   }
@@ -27,6 +28,10 @@
     margin-right: 20px;
     width: 160px;
     justify-content: flex-start;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
   }
 }
 
