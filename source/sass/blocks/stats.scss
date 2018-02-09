@@ -3,6 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+    flex-wrap: nowrap;
+  }
 }
 
 .stats__value {
@@ -12,6 +17,11 @@
   border: 1px solid #cdcdcd;
   text-align: center;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    width: 160px;
+  }
 }
 
 .stats__text {
@@ -21,6 +31,14 @@
   margin-left: -40px;
   bottom: -22px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 136px;
+    margin-left: -68px;
+    bottom: -10px;
+    font-size: 14px;
+    background-color: #ffffff
+  }
 }
 
 .stats__title {
@@ -28,6 +46,7 @@
   display: block;
   padding-top: 15px;
   font-size: 24px;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -36,4 +55,13 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+    margin-left: auto;
+    width: 195px;
+    text-align: right;
+  }
 }

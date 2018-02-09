@@ -1,11 +1,13 @@
-.slider {
-  margin-top: 40px;
-}
-
 .slider__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    height: 340px;
+    margin-top: 200px;
+    position: relative;
+  }
 }
 
 .slider__item {
@@ -22,6 +24,25 @@
   &--after {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    &--before {
+      display: none;
+    }
+
+    &--after {
+      display: block;
+      position: absolute;
+      top: -170px;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 510px;
+      }
+    }
+  }
 }
 
 .slider__control {
@@ -32,6 +53,10 @@
 .slider__switch {
   width: 85px;
   padding: 2px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .slider__switch > input[type="checkbox"] {
@@ -76,4 +101,47 @@
 
 .slider__text {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1px dashed #b8b8b8;
+  }
+}
+
+.slider__range {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 440px;
+    padding: 0 25px;
+  }
+
+  input[type="range"] {
+    appearance: none;
+    height: 6px;
+    background-color: #dcdcdc;
+    width: 100%;
+    border-radius: 5px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      height: 30px;
+      width: 30px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #dcdcdc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+      &:active {
+        width:24px;
+        height:24px;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
