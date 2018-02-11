@@ -51,7 +51,7 @@
             <article class="catalog__item  product-card">
               <div class="product-card__inner">
                 <div class="product-card__img">
-                  <a href="#">
+                  <a class="product-card__link" href="#">
                     <img class="product-card__photo" src="img/chicken-small-mobile@1x.jpg" alt="Energy PRO 500 г">
                   </a>
                 </div>
@@ -272,16 +272,20 @@
               </div>
             </article>
   <!-- Блок для отображения всех товаров -->
-            <article class="catalog__item  product-card-all">
-              <div class="product-card-all__wrapper">
-                <header class="product-card-all__header">
-                  <div class="product-card-all__icon">
-                    <img class="product-card-all__img" src="img/icon-plus-mobile.svg" alt="Иконка">
-                  </div>
-                </header>
-                <span class="product-card-all__title">Показать еще 100500 товаров</span>
-                <small class="product-card-all__text">На самом деле вкусов гораздо больше!</small>
-                <button class="product-card_all  button  button--grey">Показать все</button>
+            <article class="catalog__item  product-card  product-card--all">
+              <div class="product-card__inner">
+                <div class="product-card__img">
+                  <a class="product-card__link" href="#">
+                    <img class="product-card__icon" src="img/icon-plus-mobile.svg" alt="Иконка">
+                  </a>
+                </div>
+                <div class="product-card__info">
+                  <span class="product-card__title">Показать еще 100500 товаров</span>
+                  <span class="product-card__text">На самом деле вкусов гораздо больше!</span>
+                </div>
+              </div>
+              <div class="product-card__footer">
+                <button class="product-card__btn  button  button--grey">Показать все</button>
               </div>
             </article>
           </section>
