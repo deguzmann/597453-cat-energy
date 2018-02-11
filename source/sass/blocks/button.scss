@@ -20,4 +20,12 @@
     background: none;
     color: #000000;
   }
+
+  &--grey {
+    background-color: #f2f2f2;
+
+    &:hover{
+      background-color: #ebebeb;
+    }
+  }
 }

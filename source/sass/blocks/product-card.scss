@@ -16,8 +16,14 @@
 
     .product-card__info {
       padding: 0;
-      width: 170px;
+      width: 100%;
       text-align: center;
+      margin-top: 25px;
+
+      @media (min-width: $tablet-width) {
+        width: 170px;
+        margin-top: 0;
+      }
     }
 
     .product-card__title {
@@ -38,6 +44,7 @@
       width: 100%;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       a {
         position: relative;
