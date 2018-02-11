@@ -52,15 +52,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 60px 40px;
+  }
 }
 
 .contacts__logo {
   display: block;
   width: 130px;
   padding: 20px 0 30px;
+  line-height: 0;
+
+  img {
+    width: 130px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    padding: 0;
+  }
 }
 
 .contacts__social {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+  }
+}
+
+.contacts__copyright {
+  width: 100%;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    padding-top: 0;
+  }
 }
 
