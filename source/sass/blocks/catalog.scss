@@ -1,11 +1,13 @@
 .catalog__wrapper {
   @media (min-width: $tablet-width) {
     padding: 70px 30px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
     padding: 70px 40px;
+    padding-bottom: 0;
   }
 }
 
