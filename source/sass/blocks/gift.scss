@@ -9,12 +9,12 @@
 
     @media (min-width: $tablet-width) {
       background-position: top;
-      margin-left: 40px;
     }
 
     @media (min-width: $desktop-width) {
       background-size: cover;
       background-position: 0 0;
+      margin-left: 40px;
     }
   }
 }
