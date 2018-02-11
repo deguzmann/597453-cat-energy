@@ -2,10 +2,49 @@
   padding: 0;
 }
 
-@media (min-width: $desktop-width) {
-  .extra__wrapper {
+.extra__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 0 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.extra__header {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    content: "";
+    width: 54px;
+    height: 3px;
+    background-color: #68b738;
+  }
+}
+
+.extra__title {
+  position: relative;
+  padding: 6px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 30px;
+  }
+}
+
+.extra__gift {
+  margin-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
   }
 }
