@@ -11,27 +11,41 @@
     color: #111111;
     text-transform: uppercase;
   }
-}
 
-.site-list__item {
-  &:hover a {
-    color: #707070;
-  }
-}
+  &--home {
+    @media (min-width: $desktop-width) {
+      a {
+        color: #ffffff;
+      }
 
-@media (max-width: $mobile-width-only) {
-  .site-list__item {
-    border-bottom: 1px solid #e6e6e6;
+      .site-list__item {
+        &:hover a {
+          color: #ffffff;
+          opacity: 0.5;
+        }
 
-    a {
-      font-size: 20px;
-      font-weight: bold;
+        &--active {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            left: 0;
+            height: 3px;
+            background: #ffffff;
+          }
+
+          &:hover a {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
-}
 
-@media (min-width: $tablet-width) {
-  .site-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -41,8 +55,25 @@
       padding: 20px 0 5px;
     }
   }
+}
 
-  .site-list__item {
+.site-list__item {
+  &:hover a {
+    color: #707070;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #e6e6e6;
+
+    a {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+
     &--active {
       position: relative;
 
@@ -57,43 +88,14 @@
       }
     }
 
-    margin-right: 35px;
-
     &:last-child {
       margin-right: 0;
     }
   }
 }
 
+
 @media (min-width: $desktop-width) {
-  .site-list {
-    a {
-      color: #ffffff;
-    }
-  }
 
-  .site-list__item {
-    &:hover a {
-      color: #ffffff;
-      opacity: 0.5;
-    }
 
-    &--active {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -3px;
-        left: 0;
-        height: 3px;
-        background: #ffffff;
-      }
-
-      &:hover a {
-        opacity: 1;
-      }
-    }
-  }
 }
