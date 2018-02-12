@@ -1,3 +1,10 @@
 .label {
-  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
