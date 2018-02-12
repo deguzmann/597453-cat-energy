@@ -36,6 +36,9 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 2;
+    left: 50%;
+    margin-left: -610px;
+    top: 95px;
     width: 570px;
     height: 200px;
     background: #ffffff;
