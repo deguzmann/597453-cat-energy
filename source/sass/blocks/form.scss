@@ -46,7 +46,7 @@
     position: relative;
     margin-left: 45px;
 
-    &:before {
+    &::before {
       content: "";
       display: inline-block;
       border-radius: 50%;
@@ -73,7 +73,7 @@
     }
   }
 
-  input[type=radio]:checked + label::before {
+  input[type="radio"]:checked + label::before {
     content: "";
     background-image: url("../img/radiobutton.png");
     background-repeat: no-repeat;
@@ -225,7 +225,6 @@
     .form__row {
       width: 50%;
     }
-
   }
 }
 
@@ -234,7 +233,7 @@
 
   &[type="checkbox"] {
     &:checked {
-      +label {
+      + label {
         &::before {
           background-image: url("../img/tick.png");
           background-repeat: no-repeat;
