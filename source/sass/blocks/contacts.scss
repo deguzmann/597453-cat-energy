@@ -14,10 +14,6 @@
     margin: 0;
     font-weight: normal;
     color: #000000;
-
-    @media (min-width: $tablet-width) {
-      width: 197px;
-    }
   }
 
   p {
@@ -48,6 +44,10 @@
 
 .contacts__title {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+  }
 }
 
 .contacts__footer {

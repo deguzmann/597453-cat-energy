@@ -3,14 +3,29 @@
 }
 
 .nutrition-program__header {
-  padding: 0 30px 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 0 40px;
+  }
 }
 
 .nutrition-program__title {
+  padding-top: 5px;
+  padding-bottom: 10px;
   line-height: 60px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -25,5 +40,10 @@
     margin-left: 40px;
     line-height: 30px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 10px 0;
   }
 }
