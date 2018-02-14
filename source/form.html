@@ -7,28 +7,32 @@
   <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-<!-- Блок меню -->
-      <div class="page-header__logo">
+    <header class="page-header  page-header--nojs">
+      <div class="page-header__logo  page-header__logo--only-mobile">
         <a class="page-header__logo-images">
           <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
         </a>
         <a class="page-header__logo-desc" href="#">
           <img class="" width="100" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
         </a>
-        <button class="page-header__toggle"></button>
+        <button class="page-header__toggle  page-header__toggle--closed"><span class="visually-hidden">Меню</span></button>
+      </div>
+      <div class="page-header__logo  page-header__logo--not-mobile">
+        <a class="page-header__logo-images">
+          <img class="" width="35" src="img/logo-tablet.png" alt="Кэт энерджи">
+        </a>
       </div>
 <!-- Блок меню -->
-      <nav class="page-header__nav  main-nav">
+      <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list  site-list">
-            <li class="site-list__item  site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item  site-list__item--active">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -47,113 +51,120 @@
   <!-- Форма по подбору программы питания -->
           <form class="nutrition-program__form  form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__header">
-              <div class="form__cat-data form-group-fields">
+              <div class="form__cat-data  form-group-fields">
                 <div class="form__row  row">
-                  <label class="form__label  label">
+                  <label class="form__label  label" for="cat-name">
                     Имя:<sup>*</sup>
                   </label>
-                  <input class="form__input input" type="text" name="cat-name" value="Барсик" required>
+                  <input class="form__input  input" id="cat-name" type="text" name="cat-name" value="Барсик" required>
                 </div>
                 <div class="form__row  row">
-                  <label class="form__label  label">
+                  <label class="form__label  label" for="cat-weight">
                     Вес(кг):<sup>*</sup>
                   </label>
-                  <input class="form__input input" type="text" name="cat-weight" value="7" required>
+                  <input class="form__input  input" id="cat-weight" type="text" name="cat-weight" value="7" required>
                 </div>
                 <div class="form__row  row">
-                  <label class="form__label  label">
+                  <label class="form__label  label" for="cat-age">
                     Возраст(лет):<sup>*</sup>
                   </label>
-                  <input class="form__input input" type="text" name="cat-age" value="7">
+                  <input class="form__input  input" id="cat-age" type="text" name="cat-age" value="7">
                 </div>
               </div>
     <!-- элемент с радиокнопками -->
-              <div class="form__cat-problem form-group-fields">
+              <div class="form__cat-problem  form-group-fields">
                 <div class="form__row  row">
-                  <label class="form__label  label">
-                    <input class="form__radio" type="radio" name="cat-problem" value="Losing weight" checked> Похудение
+                  <input class="form__radio" id="cat-problem-1" type="radio" name="cat-problem" value="Losing weight" checked>
+                  <label class="form__label  label" for="cat-problem-1">
+                    <span></span>Похудение
                   </label>
                 </div>
                 <div class="form__row  row">
-                  <label class="form__label  label">
-                    <input class="form__radio" type="radio" name="cat-problem" value="Weight"> Набор массы
+                  <input class="form__radio" id="cat-problem-2" type="radio" name="cat-problem" value="Weight">
+                  <label class="form__label  label" for="cat-problem-2">
+                    Набор массы
                   </label>
                 </div>
                 <div class="form__row  row">
-                  <label class="form__label  label">
-                    <input class="form__radio" type="radio" name="cat-problem" value="recommendation"> Не знаю (нужен ваш совет)
+                  <input class="form__radio" id="cat-problem-3" type="radio" name="cat-problem" value="recommendation">
+                  <label class="form__label  label" for="cat-problem-3">
+                    Не знаю (нужен ваш совет)
                   </label>
                 </div>
               </div>
             </div>
   <!-- элемент с данными владельца кота -->
             <div class="form__contact-data">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                  Контактные данные (владельца кота)
-                </legend>
+              <div class="form__contact-inner">
+                <div class="form__title">
+                  <span>Контактные данные (владельца кота)</span>
+                </div>
                 <div class="form__contact-fields">
                   <div class="form__row  row">
-                    <label class="form__label  label">
-                      E-mail:<sup>*</sup> <input class="form__input  form__input--email" type="email" name="user-email" value="email@email.ru" required>
+                    <label class="form__label  label" for="user-email">
+                      E-mail:<sup>*</sup>
                     </label>
+                    <input class="input  form__input  form__input--email" id="user-email" type="email" name="user-email" value="email@email.ru" required>
                   </div>
                   <div class="form__row  row">
-                    <label class="form__label  label">
-                      Телефон:<sup>*</sup> <input class="form__input  form__input--tel" type="tel" name="tel" value="8(959)900-60-90" required>
+                    <label class="form__label  label" for="user-tel">
+                      Телефон:<sup>*</sup>
                     </label>
+                    <input class="input  form__input  form__input--tel" id="user-tel" type="tel" name="user-tel" value="8(959)900-60-90" required>
                   </div>
                 </div>
-              </fieldset>
+              </div>
             </div>
   <!-- элемент с комментарием -->
             <div class="form__comment">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                  Комментарий
-                </legend>
-                <div class="form__row  row">
-                  <textarea class="form__textarea" name="comment">
-                    Раскажите обо всех повадках кота
-                  </textarea>
+              <div class="form__comment-inner">
+                <div class="form__title">
+                  <span>Комментарий</span>
                 </div>
-              </fieldset>
+                <div class="form__row  row">
+                  <textarea class="form__textarea" name="comment">Раскажите обо всех повадках кота</textarea>
+                </div>
+              </div>
             </div>
   <!-- элемент с выбором дополнительных товаров -->
             <div class="form__extra-data">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                  Дополнительно
-                </legend>
+              <div class="form__extra-inner">
+                <div class="form__title">
+                  <span>Дополнительно</span>
+                </div>
                 <div class="form__extra-fields">
                   <div class="form__row  row">
-                    <label class="form__label  label">
-                      <input class="form__cheсkbox" type="checkbox" name="extra-sugar" value="Сахарозаменитель" checked > Сахарозаменитель
+                    <input class="form__cheсkbox" id="extra-sugar" type="checkbox" name="extra-sugar" value="Сахарозаменитель" checked >
+                    <label class="form__label  label" for="extra-sugar">
+                      Сахарозаменитель
                     </label>
                   </div>
                   <div class="form__row  row">
-                    <label class="form__label  label">
-                      <input class="form__cheсkbox" type="checkbox" name="extra-water" value="Питьевая вода"> Питьевая вода
+                    <input class="form__cheсkbox" id="extra-water" type="checkbox" name="extra-water" value="Питьевая вода">
+                    <label class="form__label  label" for="extra-water">
+                      Питьевая вода
                     </label>
                   </div>
                   <div class="form__row  row">
-                    <label class="form__label  label">
-                      <input class="form__cheсkbox" type="checkbox" name="extra-milk" value="Молоко"> Молоко
+                    <input class="form__cheсkbox" id="extra-milk" type="checkbox" name="extra-milk" value="Молоко">
+                    <label class="form__label  label" for="extra-milk">
+                      Молоко
                     </label>
                   </div>
                   <div class="form__row  row">
-                    <label class="form__label  label">
-                      <input class="form__cheсkbox" type="checkbox" name="extra-vitamins" value="Витамины"> Витамины
+                    <input class="form__cheсkbox" id="extra-vitamins" type="checkbox" name="extra-vitamins" value="Витамины">
+                    <label class="form__label  label" for="extra-vitamins">
+                      Витамины
                     </label>
                   </div>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div class="form__footer">
               <div class="form__button">
-                <button class="button  button--green" type="submit">Отправить заявку</button>
+                <button class="form__btn  button  button--green" type="submit">Отправить заявку</button>
               </div>
-              <div class="form__footer">
+              <div class="form__required">
                 <sup>*</sup> — Обязательные поля
               </div>
             </div>
@@ -171,35 +182,34 @@
           </header>
 <!-- Элемент с картой -->
           <div class="contacts__map">
-            <img src="http://placehold.it/150x100" alt="Карта">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4FyPCnEzCHd6x8hbqk7d9cbtJRDBhq1l&amp;width=100%25&amp;height=365&amp;lang=ru_RU&amp;scroll=false"></script>
           </div>
-
-          <img class="contacts__logo" src="img/logo-footer.svg" alt="Лого">
-
-          <hr>
+          <div class="contacts__footer">
+            <div class="contacts__logo">
+              <img src="img/logo-footer.svg" alt="Лого">
+            </div>
 <!-- Блок с социальными кнопками -->
-          <div class="contacts__social  social">
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link  social__link--vk" href="#"></a></li>
-              <li class="social__item"><a  class="social__link  social__link--insta" href="#"></a></li>
-              <li class="social__item"><a class="social__link  social__link--fb" href="#"></a></li>
-            </ul>
+            <div class="contacts__social  social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link  social__link--vk" href="#"></a></li>
+                <li class="social__item"><a  class="social__link  social__link--insta" href="#"></a></li>
+                <li class="social__item"><a class="social__link  social__link--fb" href="#"></a></li>
+              </ul>
+            </div>
+            <div class="contacts__copyright  copyright">
+              <div class="copyright__wrapper">
+                <a class="copyright__text" href="#">HTML Academy</a>
+                <a class="copyright__logo" href="#">
+                  <img src="img/logo-htmlacademy.svg" alt="Лого разработчика">
+                </a>
+              </div>
+            </div>
           </div>
-
-          <hr>
-
         </div>
       </article>
-
-      <div class="page-footer__copyright  copyright">
-        <div class="copyright__wrapper">
-          <a class="copyright__text" href="#">HTML Academy</a>
-          <a class="copyright__logo" href="#">
-            <img src="img/logo-htmlacademy.svg" alt="Лого разработчика">
-          </a>
-        </div>
-      </div>
     </footer>
+
+  <script src="js/app.js"></script>
 
   </body>
 </html>

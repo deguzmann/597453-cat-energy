@@ -1,14 +1,73 @@
 .gift {
   &--case {
+
+    height: 290px;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      background-position: top;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: cover;
+      background-position: 0 0;
+      margin-left: 40px;
+    }
+  }
+}
+
+.gift__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gift__header {
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    align-self: center;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
   }
 }
 
 .gift__text {
+  width: 170px;
+  align-self: flex-start;
+  text-align: center;
+  font-size: 16px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    text-align: center;
+  }
 }
 
 .gift__icon {
-  display: block;
-  width: 100px;
+  width: 60px;
+
+  polygon {
+    fill: #ffffff;
+  }
 }

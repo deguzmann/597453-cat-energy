@@ -1,5 +1,5 @@
 /* stylelint-disable */
-@import "normalize.css";
+@import "normalize";
 /* stylelint-enable */
 
 @import "variables.scss";
@@ -12,7 +12,6 @@
 @import "blocks/page-main.scss";
 @import "blocks/first-screen.scss";
 @import "blocks/program.scss";
-@import "blocks/link.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
 @import "blocks/stats.scss";
@@ -34,3 +33,4 @@
 @import "blocks/extra.scss";
 @import "blocks/product-card-small.scss";
 @import "blocks/gift.scss";
+@import "blocks/program-icon.scss";

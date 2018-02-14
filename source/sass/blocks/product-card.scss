@@ -1,3 +1,247 @@
 .product-card {
-  padding: 0;
+  padding: 0 20px 25px;
+  border: 1px solid #ededed;
+  border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &--all {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+
+    .product-card__inner {
+      padding: 25px 0;
+      flex-direction: column;
+    }
+
+    .product-card__info {
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 25px;
+
+      @media (min-width: $tablet-width) {
+        width: 170px;
+        margin-top: 0;
+      }
+    }
+
+    .product-card__title {
+      width: 100%;
+    }
+
+    .product-card__text {
+      margin-top: 30px;
+      font-size: 12px;
+      line-height: 16px;
+
+      @media (min-width: $tablet-width) {
+        font-size: 16px;
+      }
+    }
+
+    .product-card__img {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        position: relative;
+        top: 0;
+      }
+    }
+
+    .product-card__icon {
+      width: 35px;
+      height: 35px;
+      opacity: 0.5;
+
+      @media (min-width: $tablet-width) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .product-card__footer {
+      margin-top: auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid #ededed;
+    }
+  }
+
+  &--small {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    &:last-child {
+      .product-card__inner {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #cdcdcd;
+
+        @media (min-width: $desktop-width) {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .product-card__inner {
+      flex-direction: column;
+      border-top: 1px solid #cdcdcd;
+
+      @media (min-width: $tablet-width) {
+        padding: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 1px solid #cdcdcd;
+        border-bottom: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 12px 0 12px;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+
+    .product-card__header {
+      @media (min-width: $tablet-width) {
+        flex-grow: 1;
+      }
+    }
+
+    .product-card__title {
+      padding: 14px 0;
+      width: 100%;
+      color: #222222;
+    }
+
+    .product-card__features {
+      margin-top: 0;
+      margin-bottom: 15px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+        flex-grow: 1;
+        width: 40%;
+
+        td {
+          padding: 10px 0;
+          border-bottom: none;
+          border-collapse: collapse;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-right: 20px;
+        width: 285px;
+        flex-grow: 0;
+      }
+    }
+
+    .product-card__btn {
+      @media (min-width: $desktop-width) {
+        margin-left: 20px;
+        padding: 10px;
+        width: 245px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.product-card__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product-card__img {
+  position: relative;
+  flex-grow: 1;
+
+  a {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      top: -50%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 140px;
+    width: 100%;
+  }
+}
+
+.product-card__link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.product-card__info {
+  padding: 25px 0;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.product-card__title {
+  margin: 0;
+  display: inline-block;
+  width: 80px;
+  font-family: "Oswaldmedium", "Arial", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.product-card__features {
+  margin-top: 15px;
+  width: 100%;
+  border-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    td {
+      padding: 10px 0;
+      border-bottom: 1px solid #cdcdcd;
+      border-collapse: collapse;
+    }
+  }
+}
+
+.product-card__btn {
+  width: 100%;
 }

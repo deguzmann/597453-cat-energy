@@ -1,18 +1,120 @@
 .example {
+  margin-top: 40px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .example__wrapper {
-  margin: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .example__wrapper {
-    display: flex;
-    justify-content: space-between;
+.example__inner {
+  @include width-wrapper(1300px);
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
   }
 
-  .example__info {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__header {
+  @media (min-width: $desktop-width) {
+    width: 470px;
+  }
+}
+
+.example__stats {
+  @include width-wrapper(280px);
+  padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.example__info {
+  padding: 5px 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 30px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 40px;
+    width: 570px;
+    flex-grow: 1;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__title {
+  margin: 0;
+  padding: 25px 20px;
+  font-size: 36px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 74px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 50px 40px 74px;
+  }
+}
+
+.example__text {
+  @media (min-width: $tablet-width) {
+    padding: 15px 0;
+  }
+}
+
+.example__photo {
+  background-color: #f2f2f2;
+  flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 40px;
     width: 570px;
   }
+}
+
+.example__control {
+  padding: 40px 0;
 }

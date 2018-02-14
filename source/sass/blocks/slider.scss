@@ -1,22 +1,161 @@
-.slider {
-  padding: 0;
-}
-
 .slider__list {
+  margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.slider__item {
-  img {
-    width: 100%;
+  @media (min-width: $tablet-width) {
+    height: 340px;
+    margin-top: 200px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    height: 270px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .slider__item {
-    img {
+.slider__item {
+  text-align: center;
+
+  img {
+    width: 300px;
+
+    @media (min-width: $tablet-width) {
       width: 50%;
+    }
+  }
+
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: -170px;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 510px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -230px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--before {
+      display: none;
+    }
+  }
+}
+
+.slider__control {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    @include width-wrapper(570px);
+  }
+}
+
+.slider__switch {
+  width: 85px;
+  padding: 2px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__switch > input[type="checkbox"] {
+  display: none;
+}
+
+.slider__switch > label {
+  cursor: pointer;
+  height: 0;
+  position: relative;
+  width: 40px;
+}
+
+.slider__switch > label::before {
+  content: "";
+  margin-top: 0;
+  width: 86px;
+  height: 14px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.slider__switch > label::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  left: 5px;
+  top: 4px;
+  background: #68b738;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__switch input:checked ~ label::after {
+  left: 45px;
+}
+
+.slider__text {
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1px dashed #b8b8b8;
+    flex-grow: 1;
+  }
+}
+
+.slider__range {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  input[type="range"] {
+    appearance: none;
+    height: 6px;
+    background-color: #dcdcdc;
+    width: 100%;
+    border-radius: 5px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      height: 30px;
+      width: 30px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #dcdcdc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+      &:active {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }
