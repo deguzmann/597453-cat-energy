@@ -155,25 +155,25 @@
           <ul class="advantages__list">
             <li class="advantages__item  advantages__item--leaf">
               <span class="advantages__icon">
-                <img src="img/advantage-leaf@1x.png" alt="">
+                  <img src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="">
               </span>
               <p class="advantage__desc">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="advantages__item  advantages__item--powder">
               <span class="advantages__icon">
-                <img src="img/advantage-powder@1x.png" alt="">
+                <img src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="">
               </span>
               <p class="advantage__desc">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="advantages__item  advantages__item--dining">
               <span class="advantages__icon">
-                <img src="img/advantage-dining@1x.png" alt="">
+                <img src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" alt="">
               </span>
               <p class="advantage__desc">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
             </li>
             <li class="advantages__item  advantages__item--clock">
               <span class="advantages__icon">
-                <img src="img/advantage-clock@1x.png" alt="">
+                <img src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" alt="">
               </span>
               <p class="advantage__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
@@ -205,10 +205,18 @@
             <div class="example__photo  slider">
               <ul class="slider__list">
                 <li  class="slider__item  slider__item--before ">
-                  <img src="img/before-mobile@1x.png" alt="Было">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было">
+                  </picture>
                 </li>
                 <li class="slider__item  slider__item--after">
-                  <img src="img/before-desktop.png" alt="Стало">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало">
+                  </picture>
                 </li>
               </ul>
               <div class="example__control  slider__control">
