@@ -9,19 +9,18 @@
   <body>
 
     <header class="page-header  page-header--nojs">
-      <div class="page-header__logo  page-header__logo--only-mobile">
+      <div class="page-header__logo">
         <a class="page-header__logo-images">
-          <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
+          </picture>
         </a>
-        <a class="page-header__logo-desc" href="#">
+        <a class="page-header__logo-desc">
           <img class="" width="100" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
         </a>
         <button class="page-header__toggle  page-header__toggle--closed"><span class="visually-hidden">Меню</span></button>
-      </div>
-      <div class="page-header__logo  page-header__logo--not-mobile">
-        <a class="page-header__logo-images">
-          <img class="" width="35" src="img/logo-tablet.png" alt="Кэт энерджи">
-        </a>
       </div>
 <!-- Блок меню -->
       <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
