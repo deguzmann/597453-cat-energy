@@ -52,6 +52,15 @@
 
 .contacts__map-img {
   width: 100%;
+  height: 360px;
+
+  @media (min-width: $tablet-width) {
+    height: 390px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
 
 .contacts__footer {
