@@ -136,6 +136,20 @@
 .form__input {
   flex-grow: 1;
   min-width: 50px;
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-size: 14px auto;
+  }
+
+  &--tel {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-size: 14px auto;
+  }
 }
 
 .form__radio {
@@ -146,8 +160,44 @@
   display: none;
 }
 
-.form__contact-data,
-.form__comment,
+.form__contact-data {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 55px;
+      width: 100%;
+    }
+  }
+}
+
+.form__comment {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 55px;
+      width: 100%;
+    }
+  }
+}
+
 .form__extra-data {
   position: relative;
 
@@ -167,8 +217,32 @@
   }
 }
 
-.form__contact-inner,
-.form__comment-inner,
+.form__contact-inner {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 35px 40px;
+  }
+}
+
+.form__comment-inner {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 35px 40px;
+  }
+}
+
 .form__extra-inner {
   padding: 0 20px;
 
@@ -245,6 +319,7 @@
   text-transform: uppercase;
   outline: none;
   box-sizing: border-box;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     margin: 70px 40px 0;

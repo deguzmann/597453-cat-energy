@@ -7,7 +7,7 @@
     background-size: 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-       background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -15,7 +15,7 @@
       background-image: url("../img/gift-photo-tablet@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-         background-image: url("../img/gift-photo-tablet@2x.jpg");
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
       }
     }
 
@@ -27,7 +27,7 @@
       margin-left: 40px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-         background-image: url("../img/gift-photo-desktop@2x.jpg");
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
       }
     }
   }

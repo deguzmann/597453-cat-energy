@@ -179,6 +179,12 @@
     height: 140px;
     width: 100%;
   }
+
+  &--big a {
+    @media (min-width: $tablet-width) {
+      top: -50%;
+    }
+  }
 }
 
 .product-card__img a {
@@ -190,14 +196,6 @@
     left: 0;
     text-align: center;
     top: -30%;
-  }
-}
-
-.product-card__img {
-  &--big a {
-    @media (min-width: $tablet-width) {
-      top: -50%
-    }
   }
 }
 
