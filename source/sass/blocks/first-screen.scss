@@ -1,10 +1,14 @@
 .first-screen {
   @media (min-width: $desktop-width) {
     margin-top: -177px;
-    background-image: url("../img/index-background-desktop.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: 100% 0;
     background-size: 50%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -14,8 +18,12 @@
   padding: 10px 20px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% auto;
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
