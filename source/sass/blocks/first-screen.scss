@@ -96,10 +96,10 @@
     margin-top: -75px;
     height: 610px;
     background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: auto 610px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
-      background-size: auto 610px;
     }
   }
 

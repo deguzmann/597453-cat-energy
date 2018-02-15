@@ -175,21 +175,29 @@
   position: relative;
   flex-grow: 1;
 
-  a {
-    display: block;
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      text-align: center;
-      top: -50%;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     height: 140px;
     width: 100%;
+  }
+}
+
+.product-card__img a {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: -30%;
+  }
+}
+
+.product-card__img {
+  &--big a {
+    @media (min-width: $tablet-width) {
+      top: -50%
+    }
   }
 }
 
