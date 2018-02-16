@@ -24,6 +24,14 @@
   }
 }
 
+.extra__item {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .extra__wrapper {
   padding: 0 20px;
 
@@ -57,9 +65,11 @@
 
 .extra__title {
   position: relative;
-  margin: 40px 20px;
+  margin: 40px 0;
+  padding: 0 20px;
   display: inline-block;
   font-weight: normal;
+  font-size: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 6px 30px;
