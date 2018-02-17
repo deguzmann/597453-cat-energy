@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Функциональное питание для котов «Кэт энерджи»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header  page-header--nojs">
@@ -13,13 +13,15 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="" width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
+            <img width="35" src="img/icon-logo-mobile.svg" alt="Кэт энерджи">
           </picture>
         </a>
         <a class="page-header__logo-desc" href="index.html">
           <img class="" width="100" src="img/logo-mobile-header.svg" alt="Кэт энерджи">
         </a>
-        <button class="page-header__toggle  page-header__toggle--closed"><span class="visually-hidden">Меню</span></button>
+        <button class="page-header__toggle  page-header__toggle--closed">
+          <span class="visually-hidden">Меню</span>
+        </button>
       </div>
 <!-- Блок меню -->
       <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
@@ -95,9 +97,7 @@
   <!-- элемент с данными владельца кота -->
             <div class="form__contact-data  form__line-top">
               <div class="form__contact-inner">
-                <h2 class="form__title">
-                  Контактные данные (владельца кота)
-                </h2>
+                <h2 class="form__title">Контактные данные (владельца кота)</h2>
                 <div class="form__contact-fields">
                   <div class="form__row  row">
                     <label class="form__label  label" for="user-email">
@@ -117,9 +117,7 @@
   <!-- элемент с комментарием -->
             <div class="form__comment  form__line-top">
               <div class="form__comment-inner">
-                <h2 class="form__title">
-                  Комментарий
-                </h2>
+                <h2 class="form__title">Комментарий</h2>
                 <div class="form__row  row">
                   <textarea class="form__textarea" name="comment">Раскажите обо всех повадках кота</textarea>
                 </div>
@@ -128,9 +126,7 @@
   <!-- элемент с выбором дополнительных товаров -->
             <div class="form__extra-data  form__line-top">
               <div class="form__extra-inner">
-                <h2 class="form__title">
-                  Дополнительно
-                </h2>
+                <h2 class="form__title">Дополнительно</h2>
                 <div class="form__extra-fields">
                   <div class="form__row  row">
                     <input class="form__cheсkbox" id="extra-sugar" type="checkbox" name="extra-sugar" value="Сахарозаменитель" checked >
