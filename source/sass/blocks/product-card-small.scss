@@ -32,19 +32,16 @@
   }
 }
 
-.product-card-small__header {
-  @media (min-width: $tablet-width) {
-    flex-grow: 1;
-  }
-}
-
 .product-card-small__title {
   padding: 14px 0;
-  width: 100%;
   display: block;
   color: #222222;
   font-size: 16px;
   text-transform: uppercase;
+
+   @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .product-card-small__features {
