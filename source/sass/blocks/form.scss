@@ -130,58 +130,20 @@
   }
 }
 
-.form__contact-data {
+.form__line-top {
   position: relative;
 
   &::before {
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 50px;
     content: "";
     width: 50%;
     height: 3px;
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 55px;
-      width: 100%;
-    }
-  }
-}
-
-.form__comment {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    right: 0;
-    top: 30px;
-    content: "";
-    width: 50%;
-    height: 3px;
-    background-color: #68b738;
-
-    @media (min-width: $tablet-width) {
-      top: 55px;
-      width: 100%;
-    }
-  }
-}
-
-.form__extra-data {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    right: 0;
-    top: 30px;
-    content: "";
-    width: 50%;
-    height: 3px;
-    background-color: #68b738;
-
-    @media (min-width: $tablet-width) {
-      top: 55px;
+      top: 85px;
       width: 100%;
     }
   }
