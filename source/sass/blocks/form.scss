@@ -296,7 +296,7 @@
     height: 175px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     margin-top: 40px;
   }
@@ -321,7 +321,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     margin-top: 40px;
 
