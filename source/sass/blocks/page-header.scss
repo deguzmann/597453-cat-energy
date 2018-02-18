@@ -6,10 +6,8 @@
     opacity: 0;
   }
 
-  &--nojs .main-nav {
-    &--closed {
-      display: block;
-    }
+  &--nojs .main-nav--closed {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {

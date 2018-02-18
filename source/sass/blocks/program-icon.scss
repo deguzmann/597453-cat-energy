@@ -11,10 +11,9 @@
     left: 2px;
     width: 51px;
     height: 51px;
-
-    polygon {
-      fill: #000000;
-    }
+  }
+  &--slim polygon {
+    fill: #000000;
   }
 
   &--pro svg {
@@ -23,10 +22,10 @@
     left: -8px;
     width: 68px;
     height: auto;
+  }
 
-    polygon {
-      fill: #000000;
-    }
+  &--pro polygon {
+    fill: #000000;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,10 +41,10 @@
       left: 29px;
       width: auto;
       height: 192px;
+    }
 
-      polygon {
-        fill: #000000;
-      }
+    &--slim polygon {
+      fill: #000000;
     }
 
     &--pro svg {
@@ -54,10 +53,10 @@
       left: -36px;
       width: 270px;
       height: auto;
+    }
 
-      polygon {
-        fill: #000000;
-      }
+    &--pro polygon {
+      fill: #000000;
     }
   }
 
@@ -72,10 +71,10 @@
       left: 0;
       width: auto;
       height: 110px;
+    }
 
-      polygon {
-        fill: #000000;
-      }
+    &--slim polygon {
+      fill: #000000;
     }
 
     &--pro svg {
@@ -84,10 +83,10 @@
       left: -20px;
       width: 140px;
       height: auto;
+    }
 
-      polygon {
-        fill: #000000;
-      }
+    &--pro polygon {
+      fill: #000000;
     }
   }
 }
