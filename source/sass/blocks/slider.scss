@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     height: 340px;
-    margin-top: 200px;
+    margin-top: 230px;
     position: relative;
   }
 
@@ -116,10 +116,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-weight: bold;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 20px;
     color: #000000;
     border-bottom: 1px dashed #b8b8b8;
-    flex-grow: 1;
   }
 }
 

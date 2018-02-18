@@ -9,6 +9,13 @@
   cursor: pointer;
   outline: none;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &--green {
     width: 100%;
     background-color: #68b738;
@@ -24,6 +31,11 @@
     line-height: 18px;
     background: none;
     color: #000000;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &--grey {

@@ -12,7 +12,8 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 65px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,12 +33,6 @@
   }
 }
 
-.contacts__header h3 {
-  margin: 0;
-  font-weight: normal;
-  color: #000000;
-}
-
 .contacts__address {
   margin: 0;
   margin-left: 25px;
@@ -50,11 +45,16 @@
 }
 
 .contacts__title {
+  margin: 0;
+  font-weight: normal;
+  color: #000000;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 155px;
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 

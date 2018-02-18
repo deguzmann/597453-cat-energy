@@ -2,7 +2,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,12 +14,14 @@
 }
 
 .program__item {
+  position: relative;
   margin-bottom: 20px;
   padding: 0 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    margin-bottom: 32px;
+    padding: 0 53px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,41 +35,23 @@
 }
 
 .program__info {
-  @media (min-width: $tablet-width) {
-    flex-grow: 1;
-    width: 370px;
-    margin-right: 20px;
-  }
-
   @media (min-width: $desktop-width) {
     width: auto;
     margin-right: 0;
   }
 }
 
-.program__title {
+.program__header {
   padding-top: 10px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 
-  h2 {
-    position: relative;
-    margin-left: 20px;
-    flex-grow: 1;
-    text-align: left;
-    text-transform: uppercase;
-    color: #000000;
-    line-height: 37px;
-
-    @media (min-width: $desktop-width) {
-      padding: 20px 0;
-    }
-  }
-
   @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding-top: 0;
     text-align: left;
-    font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +59,27 @@
   }
 }
 
-.program__title-icon {
+.program__title {
+  position: relative;
+  margin-left: 20px;
+  flex-grow: 1;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0;
+  }
+}
+
+.program__header-icon {
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -110,14 +114,25 @@
   @media (min-width: $desktop-width) {
     padding-top: 40px;
   }
+
+  &--slim {
+    @media (min-width: $tablet-width) {
+      width: 375px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      width: 340px;
+    }
+  }
 }
 
 .program__footer {
   padding: 5px 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 45px;
+    padding: 20px 0 45px;
   }
 }
 
@@ -137,6 +152,11 @@
   polygon {
     fill: #000000;
   }
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    margin-left: 24px;
+  }
 }
 
 .program__icon {
@@ -144,6 +164,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-right: 5px;
+    top: 5px;
   }
 
   @media (min-width: $desktop-width) {
