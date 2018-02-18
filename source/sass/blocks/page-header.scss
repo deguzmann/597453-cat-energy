@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
 
-  &--nojs {
-    .page-header__toggle {
-      opacity: 0;
-    }
+  &--nojs .page-header__toggle {
+    opacity: 0;
+  }
 
-    .main-nav {
-      &--closed {
-        display: block;
-      }
+  &--nojs .main-nav {
+    &--closed {
+      display: block;
     }
   }
 

@@ -116,17 +116,15 @@
 }
 
 
-.form__radio:checked + label {
-  &::before {
-    content: "";
-    background-image: url("../img/radiobutton.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px;
+.form__radio:checked + label::before {
+  content: "";
+  background-image: url("../img/radiobutton.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 
-    @media (min-width: $tablet-width) {
-      background-size: 18px;
-    }
+  @media (min-width: $tablet-width) {
+    background-size: 18px;
   }
 }
 
@@ -229,11 +227,11 @@
     .form__row {
       width: 570px;
 
-      &:first-child {
+    .form__row:first-child {
         margin-right: 40px;
       }
 
-      &:last-child {
+    .form__row:last-child {
         margin-left: 40px;
       }
     }
@@ -298,17 +296,15 @@
   display: none;
 }
 
-.form__cheсkbox:checked + label {
-  &::before {
-    background-image: url("../img/tick.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
-    font-size: 30px;
-    color: #68b738;
-    text-align: center;
-    line-height: 25px;
-  }
+.form__cheсkbox:checked + label::before {
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  font-size: 30px;
+  color: #68b738;
+  text-align: center;
+  line-height: 25px;
 }
 
 .form__footer {

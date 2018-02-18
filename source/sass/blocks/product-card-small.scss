@@ -1,11 +1,9 @@
 .product-card-small {
   border: none;
 
-  &:last-child {
-    .product-card-small__inner {
-      padding-bottom: 15px;
-      border-bottom: 1px solid #cdcdcd;
-    }
+  &:last-child .product-card-small__inner {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
