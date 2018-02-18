@@ -37,7 +37,7 @@
   font-size: 16px;
   text-transform: uppercase;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
 }

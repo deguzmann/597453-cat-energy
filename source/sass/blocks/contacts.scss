@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 65px 70px;
+    padding: 45px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +41,12 @@
   @media (min-width: $tablet-width) {
     width: 197px;
     text-align: right;
+  }
+}
+
+.contacts__address p {
+  @media (min-width: $tablet-width) {
+   line-height: 22px;
   }
 }
 
