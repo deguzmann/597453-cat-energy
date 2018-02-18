@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
@@ -21,9 +22,13 @@
     margin-left: -610px;
     top: 95px;
     width: 570px;
-    height: 200px;
-    background: #ffffff;
+    height: 200px;;
     box-sizing: border-box;
+    background-color: #ffffff;
+  }
+
+  &--home {
+    background-color: #ffffff;
   }
 }
 
