@@ -6,10 +6,8 @@
     opacity: 0;
   }
 
-  &--nojs .main-nav {
-    &--closed {
-      display: block;
-    }
+  &--nojs .main-nav--closed {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 55px 40px 40px;
+    padding: 50px 40px 40px;
   }
 }
 

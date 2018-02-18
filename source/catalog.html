@@ -54,9 +54,7 @@
                   <a class="product-card__link" href="#">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-
                       <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-
                       <img class="product-card__photo" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Energy PRO 500 г">
                     </picture>
                   </a>
@@ -81,7 +79,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green" href="#">Заказать</a>
             </article>
 
             <article class="catalog__item  product-card">
@@ -90,9 +88,7 @@
                   <a class="product-card__link  product-card__link--big" href="#">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-
                       <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-
                       <img class="product-card__photo" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Energy PRO 1000 г">
                     </picture>
                   </a>
@@ -117,7 +113,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green" href="#">Заказать</a>
             </article>
 
             <article class="catalog__item  product-card">
@@ -151,7 +147,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green" href="#">Заказать</a>
             </article>
 
             <article class="catalog__item  product-card">
@@ -185,7 +181,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green" href="#">Заказать</a>
             </article>
 
             <article class="catalog__item  product-card">
@@ -219,7 +215,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green" href="#">Заказать</a>
             </article>
 
             <article class="catalog__item  product-card">
@@ -253,7 +249,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green"  href="#">Заказать</a>
             </article>
 
             <article class="catalog__item  product-card">
@@ -287,7 +283,7 @@
                   </table>
                 </div>
               </div>
-              <button class="button  button--green">Заказать</button>
+              <a class="product-card__btn  button  button--green" href="#">Заказать</a>
             </article>
   <!-- Блок для отображения всех товаров -->
             <article class="catalog__item  product-card-all">
@@ -306,7 +302,7 @@
                 </div>
               </div>
               <div class="product-card-all__footer">
-                <button class="product-card-all__btn  button  button--grey">Показать все</button>
+                <a class="product-card-all__btn  button  button--grey" href="#">Показать все</a>
               </div>
             </article>
           </section>
@@ -327,7 +323,7 @@
                       <td class="features__value">100 Р.</td>
                     </tr>
                   </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  <a class="product-card-small__btn  button  button--green" href="#">Заказать</a>
                 </div>
               </article>
 
@@ -340,7 +336,7 @@
                       <td class="features__value">50 Р.</td>
                     </tr>
                   </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  <a class="product-card-small__btn  button  button--green" href="#">Заказать</a>
                 </div>
               </article>
 
@@ -353,7 +349,7 @@
                       <td class="features__value">100 Р.</td>
                     </tr>
                   </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  <a class="product-card-small__btn  button  button--green" href="#">Заказать</a>
                 </div>
               </article>
 
@@ -366,7 +362,7 @@
                       <td class="features__value">300 Р.</td>
                     </tr>
                   </table>
-                  <button class="product-card-small__btn  button  button--green">Заказать</button>
+                  <a class="product-card-small__btn  button  button--green" href="#">Заказать</a>
                 </div>
               </article>
             </div>
@@ -388,13 +384,16 @@
     <footer class="page-footer">
       <article class="page-footer__contacts  contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__header">
+          <div class="contacts__header  contacts__header--home">
             <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="contacts__address">
+              <p>ул. Большая Конюшенная, д. 19/8</p>
+              <p>Санкт-Петербург</p>
+            </div>
           </div>
 <!-- Элемент с картой -->
           <div class="contacts__map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4FyPCnEzCHd6x8hbqk7d9cbtJRDBhq1l&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+            <iframe src="https://yandex.ru/maps/2/saint-petersburg/?text=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&sll=30.315868%2C59.939095&sspn=0.628967%2C0.178125&ll=30.323902%2C59.938720&z=17"></iframe>
           </div>
           <div class="contacts__footer">
             <div class="contacts__logo">
@@ -412,7 +411,7 @@
               <div class="copyright__wrapper">
                 <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                 <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-                  <svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#666"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#666"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
                 </a>
               </div>
             </div>
