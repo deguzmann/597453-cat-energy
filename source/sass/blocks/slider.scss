@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     height: 340px;
-    margin-top: 200px;
+    margin-top: 230px;
     position: relative;
   }
 
@@ -18,14 +18,6 @@
 .slider__item {
   text-align: center;
 
-  img {
-    width: 300px;
-
-    @media (min-width: $tablet-width) {
-      width: 50%;
-    }
-  }
-
   &--after {
     display: none;
 
@@ -35,11 +27,6 @@
       top: -170px;
       width: 100%;
       text-align: center;
-
-      img {
-        width: auto;
-        height: 510px;
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -54,6 +41,16 @@
   }
 }
 
+.slider__img {
+  height: 240px;
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 510px;
+  }
+}
+
 .slider__control {
   display: flex;
   justify-content: center;
@@ -64,8 +61,8 @@
 }
 
 .slider__switch {
-  width: 85px;
-  padding: 2px 15px;
+  width: 80px;
+  padding: 2px 22px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -99,9 +96,9 @@
 .slider__switch > label::after {
   content: "";
   position: absolute;
-  width: 36px;
+  width: 34px;
   height: 6px;
-  left: 5px;
+  left: 8px;
   top: 4px;
   background: #68b738;
   border-radius: 16px;
@@ -113,13 +110,17 @@
 }
 
 .slider__text {
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-weight: bold;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 20px;
     color: #000000;
     border-bottom: 1px dashed #b8b8b8;
-    flex-grow: 1;
   }
 }
 
@@ -139,23 +140,23 @@
     width: 100%;
     border-radius: 5px;
 
-    &::-webkit-slider-thumb {
-      appearance: none;
-      height: 30px;
-      width: 30px;
-      background-color: #ffffff;
-      border-radius: 50%;
-      border: 1px solid #dcdcdc;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-
-      &:active {
-        width: 24px;
-        height: 24px;
-      }
-    }
-
     &:focus {
       outline: none;
+    }
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+    &:active {
+      width: 24px;
+      height: 24px;
     }
   }
 }

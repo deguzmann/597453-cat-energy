@@ -66,15 +66,17 @@
   width: 80px;
   font-family: "Oswaldmedium", "Arial", sans-serif;
   font-size: 16px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    margin: 0 auto;
+    width: 160px;
     font-size: 20px;
     line-height: 20px;
-    text-align: left;
+    text-align: center;
   }
 }
 

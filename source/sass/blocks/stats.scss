@@ -1,5 +1,4 @@
 .stats {
-  padding: 15px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -18,15 +17,16 @@
 
 .stats__value {
   position: relative;
-  width: 125px;
+  width: 123px;
   height: 55px;
   border: 1px solid #cdcdcd;
+  border-radius: 2px;
   text-align: center;
-  border-radius: 5px;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
     width: 160px;
+    height: 65px;
     justify-content: flex-start;
   }
 
@@ -40,13 +40,15 @@
   width: 80px;
   left: 50%;
   margin-left: -40px;
-  bottom: -22px;
+  bottom: -15px;
+  font-size: 12px;
+  line-height: 12px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    width: 136px;
-    margin-left: -68px;
-    bottom: -10px;
+    width: 140px;
+    margin-left: -70px;
+    bottom: -7px;
     font-size: 14px;
     background-color: #ffffff;
   }
@@ -60,23 +62,32 @@
   position: relative;
   display: block;
   padding-top: 15px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__legend {
-  margin-top: 49px;
+  margin-top: 35px;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "Oswaldregular", "Arial", sans-serif;
   color: #000000;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-left: auto;
     width: 195px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: right;
   }
 

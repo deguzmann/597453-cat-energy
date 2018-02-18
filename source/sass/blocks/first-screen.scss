@@ -2,12 +2,14 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin-bottom: 18px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     background-image: none;
   }
 
@@ -27,14 +29,14 @@
 .first-screen__wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 3px 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 35px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +55,7 @@
   @media (min-width: $tablet-width) {
     height: auto;
     width: 430px;
-    margin-left: 90px;
+    margin-left: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,23 +67,27 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-top: 24px;
     color: #111111;
   }
 }
 
 .first-screen__slogan {
+  font-family: "Oswaldregular", "Arial", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 20px;
     color: #111111;
   }
 }
 
 .first-screen__img {
-  margin-top: -135px;
-  height: 271px;
+  margin-top: -173px;
+  height: 275px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -114,12 +120,14 @@
 }
 
 .first-screen__btn {
+  display: block;
   width: 100%;
   z-index: 2;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    margin-top: 25px;
+    width: 245px;
+    margin-top: 26px;
     margin-left: 90px;
   }
 

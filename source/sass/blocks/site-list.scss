@@ -1,95 +1,70 @@
 .site-list {
   padding: 0;
 
-  a {
-    display: block;
-    padding: 25px 0;
-    font-size: 18px;
-    font-family: "Oswaldregular", "Arial", sans-serif;
-    font-weight: normal;
-    text-decoration: none;
-    color: #111111;
-    text-transform: uppercase;
-  }
-
-  &--home {
-    @media (min-width: $desktop-width) {
-      a {
-        color: #ffffff;
-      }
-
-      .site-list__item {
-        &:hover a {
-          color: #ffffff;
-          opacity: 0.5;
-        }
-
-        &--active {
-          position: relative;
-
-          &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: -3px;
-            left: 0;
-            height: 3px;
-            background: #ffffff;
-          }
-
-          &:hover a {
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+  }
 
-    a {
-      padding: 20px 0 5px;
+  @media (min-width: $desktop-width) {
+    &--home a {
+      color: #ffffff;
     }
   }
 }
 
 .site-list__item {
-  &:hover a {
-    color: #707070;
-  }
-
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #e6e6e6;
-
-    a {
-      font-size: 20px;
-      font-weight: bold;
-    }
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 35px;
 
-    &--active {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -3px;
-        left: 0;
-        height: 3px;
-        background: #68b738;
-      }
-    }
-
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.site-list__link {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  font-size: 18px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #111111;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &--active::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+    }
+  }
+}
+
+.site-list--home .site-list__link--active::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
   }
 }

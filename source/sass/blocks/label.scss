@@ -14,30 +14,30 @@
     position: relative;
     margin-left: 45px;
 
-    &::before {
-      content: "";
-      display: inline-block;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      left: -45px;
-      bottom: -7px;
-      background-color: #ffffff;
-      border: 1px solid #ededed;
-      box-shadow: none;
-      box-sizing: border-box;
-
-      @media (min-width: $tablet-width) {
-        width: 40px;
-        height: 40px;
-        bottom: -12px;
-        left: -55px;
-      }
-    }
-
     @media (min-width: $tablet-width) {
       margin-left: 55px;
+    }
+  }
+
+  &--cat-problem::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -45px;
+    bottom: -7px;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    box-shadow: none;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      bottom: -12px;
+      left: -55px;
     }
   }
 
@@ -45,29 +45,29 @@
     margin-left: 45px;
     padding: 15px 0;
 
-    &::before {
-      margin-right: 10px;
-      position: absolute;
-      left: -45px;
-      top: 10px;
-      width: 30px;
-      height: 30px;
-      content: "";
-      display: inline-block;
-      background-color: #ffffff;
-      border: 1px solid #ededed;
-      box-sizing: border-box;
-
-      @media (min-width: $tablet-width) {
-        width: 40px;
-        height: 40px;
-        top: 5px;
-        left: -55px;
-      }
-    }
-
     @media (min-width: $tablet-width) {
       margin-left: 55px;
+    }
+  }
+
+  &--extra::before {
+    margin-right: 10px;
+    position: absolute;
+    left: -45px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    content: "";
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: 5px;
+      left: -55px;
     }
   }
 }

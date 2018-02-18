@@ -116,72 +116,32 @@
 }
 
 
-.form__radio:checked + label {
-  &::before {
-    content: "";
-    background-image: url("../img/radiobutton.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px;
+.form__radio:checked + label::before {
+  content: "";
+  background-image: url("../img/radiobutton.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 
-    @media (min-width: $tablet-width) {
-      background-size: 18px;
-    }
+  @media (min-width: $tablet-width) {
+    background-size: 18px;
   }
 }
 
-.form__contact-data {
+.form__line-top {
   position: relative;
 
   &::before {
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 50px;
     content: "";
     width: 50%;
     height: 3px;
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 55px;
-      width: 100%;
-    }
-  }
-}
-
-.form__comment {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    right: 0;
-    top: 30px;
-    content: "";
-    width: 50%;
-    height: 3px;
-    background-color: #68b738;
-
-    @media (min-width: $tablet-width) {
-      top: 55px;
-      width: 100%;
-    }
-  }
-}
-
-.form__extra-data {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    right: 0;
-    top: 30px;
-    content: "";
-    width: 50%;
-    height: 3px;
-    background-color: #68b738;
-
-    @media (min-width: $tablet-width) {
-      top: 55px;
+      top: 85px;
       width: 100%;
     }
   }
@@ -266,14 +226,14 @@
 
     .form__row {
       width: 570px;
+    }
 
-      &:first-child {
-        margin-right: 40px;
-      }
+    .form__row:first-child {
+      margin-right: 40px;
+    }
 
-      &:last-child {
-        margin-left: 40px;
-      }
+    .form__row:last-child {
+      margin-left: 40px;
     }
   }
 }
@@ -285,6 +245,7 @@
   height: 150px;
   border: 1px solid #ededed;
   font-size: 16px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   outline: none;
@@ -335,17 +296,15 @@
   display: none;
 }
 
-.form__cheсkbox:checked + label {
-  &::before {
-    background-image: url("../img/tick.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70%;
-    font-size: 30px;
-    color: #68b738;
-    text-align: center;
-    line-height: 25px;
-  }
+.form__cheсkbox:checked + label::before {
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  font-size: 30px;
+  color: #68b738;
+  text-align: center;
+  line-height: 25px;
 }
 
 .form__footer {
