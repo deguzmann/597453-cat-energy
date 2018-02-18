@@ -1,5 +1,5 @@
 .program__wrapper {
-  padding: 10px 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 30px;
@@ -46,14 +46,16 @@
 }
 
 .program__title {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 
   h2 {
     position: relative;
+    margin-left: 20px;
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     color: #000000;
     line-height: 37px;
@@ -85,7 +87,7 @@
 
 .program__desc {
   margin: 0;
-  padding: 20px 0;
+  padding-bottom: 22px;
   position: relative;
 
   &::after {
@@ -111,7 +113,7 @@
 }
 
 .program__footer {
-  padding: 5px 0;
+  padding: 5px 0 10px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -122,13 +124,12 @@
 .program__btn {
   position: relative;
   display: block;
-  padding-bottom: 0;
 }
 
 .program__btn-icon {
   position: absolute;
-  top: 17px;
-  padding-left: 10px;
+  top: 14px;
+  margin-left: 11px;
   width: 24px;
   height: 16px;
   opacity: 0.8;

@@ -42,11 +42,12 @@
 }
 
 .slider__img {
-  width: 300px;
+  height: 240px;
+  width: auto;
 
   @media (min-width: $tablet-width) {
     width: auto;
-   height: 510px;
+    height: 510px;
   }
 }
 
@@ -60,8 +61,8 @@
 }
 
 .slider__switch {
-  width: 85px;
-  padding: 2px 15px;
+  width: 80px;
+  padding: 2px 22px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -95,9 +96,9 @@
 .slider__switch > label::after {
   content: "";
   position: absolute;
-  width: 36px;
+  width: 34px;
   height: 6px;
-  left: 5px;
+  left: 8px;
   top: 4px;
   background: #68b738;
   border-radius: 16px;
@@ -109,6 +110,9 @@
 }
 
 .slider__text {
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

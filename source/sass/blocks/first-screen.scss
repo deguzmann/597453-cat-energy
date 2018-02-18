@@ -2,6 +2,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin-bottom: 18px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -27,7 +28,7 @@
 .first-screen__wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 3px 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -70,8 +71,10 @@
 }
 
 .first-screen__slogan {
+  font-family: "Oswaldregular", "Arial", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -80,8 +83,8 @@
 }
 
 .first-screen__img {
-  margin-top: -135px;
-  height: 271px;
+  margin-top: -173px;
+  height: 275px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;

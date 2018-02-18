@@ -1,5 +1,5 @@
 .advantages__wrapper {
-  padding: 0 20px;
+  padding: 0 20px 22px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -12,7 +12,9 @@
 }
 
 .advantages__title {
+  margin-top: 0;
   font-size: 36px;
+  line-height: 50px;
   color: #000000;
 
   @media (min-width: $tablet-width) {
@@ -21,6 +23,7 @@
 }
 
 .advantages__list {
+  margin: 0;
   padding: 0;
   list-style: none;
 
@@ -91,6 +94,7 @@
 }
 
 .advantage__desc {
+  margin: auto;
   margin-left: 20px;
   width: 100%;
   flex-shrink: 1;
