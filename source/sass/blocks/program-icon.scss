@@ -12,6 +12,7 @@
     width: 51px;
     height: 51px;
   }
+
   &--slim polygon {
     fill: #000000;
   }
@@ -62,6 +63,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin-top: 0;
+    margin-left: 50px;
     width: 110px;
     height: 110px;
 
