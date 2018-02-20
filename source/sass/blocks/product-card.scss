@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -50,7 +51,8 @@
 }
 
 .product-card__info {
-  padding: 25px 0;
+  margin-top: 21px;
+  width: 140px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -65,11 +67,12 @@
   display: block;
   width: 80px;
   font-family: "Oswaldmedium", "Arial", sans-serif;
+  line-height: 20px;
   font-size: 16px;
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -81,9 +84,11 @@
 }
 
 .product-card__features {
-  margin-top: 15px;
+  margin-top: 13px;
   width: 100%;
   border-spacing: 0;
+  font-size: 12px;
+  line-height: 14px;
 
   @media (min-width: $tablet-width) {
     td {

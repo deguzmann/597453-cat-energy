@@ -133,6 +133,10 @@
     border-bottom: 1px dashed #b8b8b8;
     padding-bottom: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 25px;
+  }
 }
 
 .slider__range {

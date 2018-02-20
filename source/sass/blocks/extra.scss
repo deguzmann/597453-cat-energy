@@ -1,12 +1,12 @@
 .extra {
   position: relative;
   padding: 0;
-  padding-bottom: 75px;
+      margin-bottom: 35px;
 
   &::before {
     position: absolute;
     right: 0;
-    top: 55px;
+    top: 42px;
     content: "";
     width: 54px;
     height: 3px;
@@ -65,7 +65,8 @@
 
 .extra__title {
   position: relative;
-  margin: 40px 0;
+  margin-top: 28px;
+  margin-bottom: 34px;
   padding: 0 20px;
   display: inline-block;
   font-weight: normal;
@@ -84,7 +85,7 @@
 }
 
 .extra__gift {
-  margin-top: 40px;
+  margin-top: 55px;
 
   @media (min-width: $desktop-width) {
     margin-top: 0;

@@ -16,23 +16,23 @@
 }
 
 .product-card-all__info {
+  margin-bottom: 20px;
   padding: 0;
   width: 100%;
   text-align: center;
-  margin-top: 25px;
 }
 
 .product-card-all__title {
   margin: 0 auto;
-  margin-bottom: 25px;
-  width: 140px;
+  margin-bottom: 5px;
+  width: 100%;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Oswaldmedium", "Arial", sans-serif;
+  font-family: "Oswaldregular", "Arial", sans-serif;
 }
 
 .product-card-all__text {

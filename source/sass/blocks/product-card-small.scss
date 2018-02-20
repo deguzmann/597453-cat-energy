@@ -2,7 +2,6 @@
   border: none;
 
   &:last-child .product-card-small__inner {
-    padding-bottom: 15px;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -31,11 +30,14 @@
 }
 
 .product-card-small__title {
-  padding: 14px 0;
+  margin: 12px 0;
   display: block;
+  width: 100%;
+  font-family: "Oswaldregular", "Arial", sans-serif;
   color: #222222;
   font-size: 16px;
   text-transform: uppercase;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -43,6 +45,7 @@
 }
 
 .product-card-small__features {
+  border-spacing: 0;
   margin-top: 0;
   margin-bottom: 15px;
   width: 100%;
