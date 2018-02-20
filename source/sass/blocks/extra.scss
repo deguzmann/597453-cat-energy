@@ -1,7 +1,7 @@
 .extra {
   position: relative;
   padding: 0;
-      margin-bottom: 35px;
+  margin-bottom: 35px;
 
   &::before {
     position: absolute;
@@ -13,7 +13,7 @@
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 68px;
+      top: 23px;
       width: 100%;
     }
 
@@ -21,6 +21,10 @@
       top: 92px;
       width: 100%;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
   }
 }
 
@@ -58,6 +62,10 @@
 .extra__header {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
   }
@@ -73,7 +81,8 @@
   font-size: 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 6px 30px;
+    margin: 0 30px;
+    padding:0 36px;
     font-size: 36px;
     line-height: 36px;
     background-color: #ffffff;
@@ -86,6 +95,10 @@
 
 .extra__gift {
   margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;

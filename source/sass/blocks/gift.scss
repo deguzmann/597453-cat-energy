@@ -69,8 +69,10 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-top: 16px;
     align-self: center;
     text-align: left;
+    line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {

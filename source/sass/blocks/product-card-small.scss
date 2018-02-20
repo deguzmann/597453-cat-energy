@@ -14,7 +14,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 35px;
+    padding: 12px 36px 27px;
     flex-direction: row;
     border: 1px solid #cdcdcd;
     border-bottom: none;
@@ -40,7 +40,10 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    margin-bottom: 27px;
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -52,13 +55,17 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    flex-grow: 1;
-    width: 40%;
+    width: 228px;
 
     td {
       padding: 10px 0;
       border-bottom: none;
       border-collapse: collapse;
+
+      @media (min-width: $tablet-width) {
+        padding: 0;
+        padding-bottom: 5px;
+      }
     }
   }
 
