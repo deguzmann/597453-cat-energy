@@ -64,6 +64,7 @@
   @media (min-width: $tablet-width) {
     @include width-wrapper(570px);
   }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 565px;

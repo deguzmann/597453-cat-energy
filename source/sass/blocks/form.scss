@@ -176,7 +176,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -241,7 +241,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-top:35px;
+    margin-top: 35px;
     padding: 0 40px;
     width: auto;
     font-size: 36px;
