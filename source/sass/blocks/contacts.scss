@@ -133,14 +133,14 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 35px 40px;
+    padding: 40px;
   }
 }
 
 .contacts__logo {
   display: block;
   width: 130px;
-  padding: 20px 0 30px;
+  padding: 20px 0 24px;
 
   @media (min-width: $tablet-width) {
     width: 130px;

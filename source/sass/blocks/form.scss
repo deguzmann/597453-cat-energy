@@ -1,6 +1,6 @@
 .form {
+  margin-bottom: 30px;
   padding: 0;
-  padding-bottom: 35px;
   color: #222222;
   font-family: "Oswaldregular", "Arial", sans-serif;
 }
@@ -43,7 +43,7 @@
 }
 
 .form__cat-problem {
-  padding: 20px;
+  padding: 16px 20px;
   border: 1px solid #ededed;
 
   .form__row {
@@ -57,7 +57,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 70px;
     margin-top: 70px;
-    padding: 25px;
+    padding: 15px 25px 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -95,15 +95,23 @@
   &--email {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: 97% center;
-    background-size: 14px auto;
+    background-position: 92% center;
+    background-size: 16px auto;
+
+    @media (min-width: $tablet-width) {
+      background-position: 97% center;
+    }
   }
 
   &--tel {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 97% center;
-    background-size: 14px auto;
+    background-position: 92% center;
+    background-size: 16px auto;
+
+    @media (min-width: $tablet-width) {
+      background-position: 97% center;
+    }
   }
 }
 
@@ -134,16 +142,24 @@
   &::before {
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 22px;
     content: "";
     width: 50%;
     height: 3px;
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 85px;
+      top: 58px;
       width: 100%;
     }
+  }
+}
+
+.form__contact-data {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -151,7 +167,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,11 +176,19 @@
   }
 }
 
+.form__comment {
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+}
+
 .form__comment-inner {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -177,7 +201,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -187,8 +211,8 @@
 }
 
 .form__title {
-  padding: 15px 0;
-  width: 200px;
+  margin-top: 8px;
+  padding-right: 22px;
   display: inline-block;
   position: relative;
   font-size: 24px;
@@ -196,6 +220,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-top:35px;
     padding: 0 40px;
     width: auto;
     font-size: 36px;
@@ -215,7 +240,7 @@
   height: 100px;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 40px 0;
+    margin: 45px 40px 0;
     height: 125px;
   }
 
@@ -239,8 +264,8 @@
 }
 
 .form__textarea {
-  padding: 15px;
   margin: 15px 0;
+  padding: 10px 15px;
   width: 100%;
   height: 150px;
   border: 1px solid #ededed;
@@ -253,8 +278,10 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    margin: 70px 40px 0;
+    margin: 48px 40px 0;
     height: 175px;
+    font-size: 20px;
+    padding: 14px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -264,21 +291,22 @@
 }
 
 .form__extra-fields {
-  margin: 15px 0;
+  margin-top: 12px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 160px;
 
   @media (min-width: $tablet-width) {
-    margin: 50px 40px 0;
+    margin: 5px 40px 30px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 
     .form__row {
+      flex-grow: 1;
       width: 280px;
-      margin-right: 60px;
     }
   }
 
@@ -308,11 +336,11 @@
 }
 
 .form__footer {
-  padding: 15px 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 20px 70px 35px;
+    margin: 0 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -338,11 +366,14 @@
 }
 
 .form__required {
-  padding: 25px 0 20px;
+  margin-top: 18px;
+  padding: 0 20px;
   text-align: center;
+  font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-top: 0;
+    margin-left: 18px;
     font-size: 16px;
     line-height: 16px;
     color: #444444;

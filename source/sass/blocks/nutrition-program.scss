@@ -2,10 +2,19 @@
   font-family: "Oswaldregular", "Arial", sans-serif;
 }
 
+.nutrition-program__wrapper {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+}
+
 .nutrition-program__header {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
     padding: 0 30px;
   }
 
@@ -16,8 +25,7 @@
 }
 
 .nutrition-program__title {
-  padding-top: 5px;
-  padding-bottom: 10px;
+  margin-top: 15px;
   line-height: 60px;
 
   @media (min-width: $tablet-width) {

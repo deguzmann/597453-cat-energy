@@ -1,8 +1,8 @@
 .button {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  font-size: 14px;
-  line-height: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   font-family: "Oswaldregular", "Arial", sans-serif;
   border: none;
@@ -45,6 +45,13 @@
 
     &:hover {
       background-color: #ebebeb;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
 }
