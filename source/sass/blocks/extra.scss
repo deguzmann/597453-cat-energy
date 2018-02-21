@@ -18,13 +18,17 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 92px;
+      top: 22px;
       width: 100%;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
   }
 }
 
@@ -68,6 +72,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
+    margin-bottom: 75px;
   }
 }
 
@@ -89,7 +94,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 40px;
+    margin: 0;
+    padding: 0 40px;
   }
 }
 

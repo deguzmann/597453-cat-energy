@@ -7,6 +7,10 @@
     padding: 0 40px 40px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 45px;
+  }
 }
 
 .product-card__inner {
@@ -31,6 +35,9 @@
   @media (min-width: $tablet-width) {
     height: 140px;
     width: 325px;
+  }
+   @media (min-width: $tablet-width) {
+    width: 245px;
   }
 }
 

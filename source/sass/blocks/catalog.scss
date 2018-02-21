@@ -5,8 +5,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 70px 40px;
-    padding-bottom: 0;
+    padding: 0 40px;
   }
 }
 
@@ -18,11 +17,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-bottom: 75px;
     font-size: 60px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 95px;
   }
 }
 
@@ -32,6 +32,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
   }
 }
 
