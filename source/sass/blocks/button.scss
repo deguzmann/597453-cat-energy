@@ -36,6 +36,11 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 
   &--grey {
