@@ -17,6 +17,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 55px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 60px;
+    }
   }
 
   &--cat-problem::before {

@@ -16,7 +16,7 @@
     @include width-wrapper(1300px);
     display: flex;
     justify-content: flex-start;
-    padding: 25px 40px;
+    padding: 0 40px;
   }
 }
 
@@ -101,6 +101,10 @@
     @media (min-width: $tablet-width) {
       background-position: 97% center;
     }
+
+    @media (min-width: $desktop-width) {
+      background-position: 96% center;
+    }
   }
 
   &--tel {
@@ -111,6 +115,11 @@
 
     @media (min-width: $tablet-width) {
       background-position: 97% center;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 96% center;
+      background-size: 18px auto;
     }
   }
 }
@@ -152,6 +161,10 @@
       top: 58px;
       width: 100%;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+    }
   }
 }
 
@@ -160,6 +173,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0px;
   }
 }
 
@@ -172,7 +189,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 35px 40px;
+    padding: 0 40px;
   }
 }
 
@@ -181,6 +198,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 }
 
@@ -193,7 +214,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 35px 40px;
+    padding: 0 40px;
   }
 }
 
@@ -206,7 +227,7 @@
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 35px 40px;
+    padding: 0 40px;
   }
 }
 
@@ -228,6 +249,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 32px;
+    margin-bottom: 36px;
     margin-left: -40px;
   }
 }
@@ -246,7 +269,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-top: 40px;
     flex-direction: row;
 
     .form__row {
@@ -299,20 +321,21 @@
   height: 160px;
 
   @media (min-width: $tablet-width) {
-    margin: 5px 40px 30px;
+    margin: 8px 40px 36px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    height: 150px;
 
     .form__row {
-      flex-grow: 1;
-      width: 280px;
+      width: 285px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-top: 40px;
+    margin: auto;
+    margin-bottom: 62px;
+    margin-top: 16px;
+    height: 45px;
 
     .form__row {
       width: 245px;
@@ -380,6 +403,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 40px;
+    margin-left: 22px;
   }
 }
