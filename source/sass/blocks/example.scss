@@ -50,6 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     padding: 0;
     width: 570px;
     flex-grow: 1;
