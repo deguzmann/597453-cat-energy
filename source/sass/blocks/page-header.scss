@@ -14,10 +14,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 25px 30px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
+    margin-bottom: 33px;
     padding: 50px 40px 40px;
   }
 }

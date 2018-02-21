@@ -13,11 +13,12 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 45px 70px;
+    padding: 45px 70px 40px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    padding: 45px 77px 40px;
     z-index: 2;
     left: 50%;
     margin-left: -610px;
@@ -35,18 +36,29 @@
 
 .contacts__address {
   margin: 0;
-  margin-left: 25px;
-  line-height: 20px;
+  margin-left: 30px;
 
   @media (min-width: $tablet-width) {
     width: 197px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 105px;
+  }
 }
 
 .contacts__address p {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
+    margin: 16px 0;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
   }
 }
 
@@ -56,11 +68,17 @@
   color: #000000;
   line-height: 20px;
   text-transform: uppercase;
+  width: 175px;
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    width: 175px;
     font-size: 20px;
     line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -108,25 +126,24 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 30px;
+    padding: 40px 30px 45px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     @include width-wrapper(1300px);
-    padding: 60px 40px;
+    padding: 40px;
   }
 }
 
 .contacts__logo {
   display: block;
   width: 130px;
-  padding: 20px 0 30px;
-  line-height: 0;
+  padding: 20px 0 24px;
 
   @media (min-width: $tablet-width) {
-    width: 160px;
+    width: 130px;
     padding: 0;
   }
 }

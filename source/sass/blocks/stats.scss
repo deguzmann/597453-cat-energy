@@ -4,7 +4,6 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0;
     flex-wrap: nowrap;
   }
 
@@ -31,7 +30,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 40px;
+    margin-right: 45px;
+    height: 68px;
   }
 }
 
@@ -54,6 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    bottom: -5px;
     background-color: #f2f2f2;
   }
 }
@@ -63,6 +64,7 @@
   display: block;
   padding-top: 15px;
   font-family: "Oswaldregular", "Arial", sans-serif;
+  line-height: 24px;
   font-size: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -71,6 +73,10 @@
     padding-top: 10px;
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
   }
 }
 
@@ -92,7 +98,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 65px;
+    margin-top: 55px;
     margin-left: 0;
     width: 325px;
     text-align: left;

@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    margin-bottom: 70px;
     height: 270px;
   }
 }
@@ -30,7 +31,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -230px;
+      position: relative;
+      top: -190px;
     }
   }
 
@@ -49,6 +51,10 @@
     width: auto;
     height: 510px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 520px;
+  }
 }
 
 .slider__control {
@@ -57,6 +63,11 @@
 
   @media (min-width: $tablet-width) {
     @include width-wrapper(570px);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 565px;
   }
 }
 
@@ -121,6 +132,11 @@
     line-height: 20px;
     color: #000000;
     border-bottom: 1px dashed #b8b8b8;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 25px;
   }
 }
 
@@ -131,6 +147,10 @@
     display: block;
     width: 100%;
     padding: 0 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
   }
 }
 
