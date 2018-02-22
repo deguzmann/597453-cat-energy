@@ -1,7 +1,7 @@
 .button {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   font-family: "Oswaldregular", "Arial", sans-serif;
@@ -55,6 +55,29 @@
 
   &--form {
     @media (min-width: $tablet-width) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &--first-screen {
+    display: block;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 26px;
+      margin-left: 90px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 245px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 35px;
+      margin-left: 82px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
