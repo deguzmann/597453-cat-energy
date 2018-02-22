@@ -59,7 +59,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    width: 228px;
+    width: 50%;
+    text-align: right;
 
     td {
       padding: 10px 0;
@@ -71,6 +72,10 @@
         padding-bottom: 5px;
       }
     }
+
+    .features__value {
+      width: 95px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +83,7 @@
     margin-top: 14px;
     width: 285px;
     flex-grow: 0;
+    text-align: left;
   }
 }
 
