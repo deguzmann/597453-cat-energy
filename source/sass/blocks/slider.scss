@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     height: 340px;
-    margin-top: 230px;
+    margin-top: 255px;
     position: relative;
   }
 
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     width: 565px;
   }
 }
