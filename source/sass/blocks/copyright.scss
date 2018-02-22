@@ -1,7 +1,11 @@
-.copyright__wrapper {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  color: #444444;
+  font-size: 16px;
+  line-height: 0;
 }
 
 .copyright__wrapper a {
