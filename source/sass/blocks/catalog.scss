@@ -16,8 +16,9 @@
   line-height: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin-top: 25px;
     margin-bottom: 75px;
+    padding: 0;
     font-size: 60px;
   }
 

@@ -34,6 +34,7 @@
   line-height: 60px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 24px;
     padding-bottom: 15px;
   }
 
@@ -44,6 +45,8 @@
 }
 
 .nutrition-program__desc {
+  display: inline-block;
+  width: 250px;
   line-height: 18px;
   font-size: 14px;
   text-transform: uppercase;

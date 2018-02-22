@@ -1,20 +1,16 @@
 .social__list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 22px 0;
+  width: 124px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    border: none;
+    margin: 0 auto;
+    padding: 0;
   }
-}
-
-.social__item {
-  padding: 22px 18px;
 }
 
 .social__link {
